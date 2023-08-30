@@ -1,15 +1,34 @@
-# tdtx_nf_icons
+# tdtx_nf_icons 
 
-A new Flutter plugin project.
+A package that bundles fonts, such as the icons from the typefaces I like the most, to use them in ***Flutter***.
 
-## Getting Started
+<br>
+<img src="https://www.nerdfonts.com/assets/img/nerd-fonts-logo.svg" width="150px" />
 
-This project is a starting point for a Flutter
-[plug-in package](https://flutter.dev/developing-packages/),
-a specialized package that includes platform-specific implementation code for
-Android and/or iOS.
 
-For help getting started with Flutter development, view the
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+You can find the font at [nerdfonts.com](https://www.nerdfonts.com)
+
+
+---
+Un paquete que reúne las fuentes, como los íconos de las tipografías que más me gustan, para poder usarlos en ***Flutter***.
+
+<br>
+<img src="https://www.nerdfonts.com/assets/img/nerd-fonts-logo.svg" width="150px" />
+
+
+Pueden encontrar la fuente en [nerdfonts.com](https://www.nerdfonts.com)
+
+## Usage / uso 
+
+The package will be used in the same way as a normal ***Icon***
+
+El paque se usara del mis mo modo que un ***Icon*** normal
+
+```dart
+    Icon(TDTxNFIcons.nf_cod_account);
+```
+
+To locate the icons, refer to the [Nerd Fonts](https://www.nerdfonts.com/cheat-sheet) website.
+
+Para localizar los íconos, te recomendamos consultar la página de [Nerd Fonts](https://www.nerdfonts.com/cheat-sheet).
 
