@@ -9491,7 +9491,7 @@ class NFIconData extends IconData {
   const NFIconData(int codePoint)
       : super(
           codePoint,
-          fontFamily: "NF Hack",
-          fontPackage: "tdtxle_fonts",
+          fontFamily: "NFH Regular",
+          fontPackage: "tdtx_nf_icons",
         );
 }

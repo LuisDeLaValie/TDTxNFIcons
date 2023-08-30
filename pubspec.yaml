@@ -47,13 +47,13 @@ flutter:
       macos:
         pluginClass: TdtxNfIconsPlugin
       windows:
-        pluginClass: TdtxNfIconsPlugin
+        pluginClass: TdtxNfIconsPluginCApi
       web:
-        pluginClass: TdtxNfIconsPlugin
+        pluginClass: TdtxNfIconsWeb
+        fileName: tdtx_nf_icons_web.dart
 
   # To add assets to your plugin package, add an assets section, like this:
-  assets:
-    - "assets/fonts/nert fot/"
+ 
 
   
   # For details regarding assets in packages, see
@@ -79,18 +79,42 @@ flutter:
   #       - asset: fonts/TrajanPro_Bold.ttf
   #         weight: 700
   fonts:
-    - family: NF Hack
+    - family: "NFH Bold"
       fonts:
-        - asset: "assets/fonts/nert fot/Hack/Hack Regular Nerd Font Complete.ttf"
-    - family: NF Hack Bold
+       - asset: "fonts/HackNerdFont-Bold.ttf"
+    - family: "NFH BoldItalic"
       fonts:
-        - asset: "assets/fonts/nert fot/Hack/Hack Bold Nerd Font Complete.ttf"
-    - family: NF Hack Italic
+       - asset: "fonts/HackNerdFont-BoldItalic.ttf"
+    - family: "NFH Italic"
       fonts:
-        - asset: "assets/fonts/nert fot/Hack/Hack Italic Nerd Font Complete.ttf"
-    - family: NF Hack Bold Italic
+       - asset: "fonts/HackNerdFont-Italic.ttf"
+    - family: "NFH Regular"
       fonts:
-        - asset: "assets/fonts/nert fot/Hack/Hack Bold Italic Nerd Font Complete.ttf"
+       - asset: "fonts/HackNerdFont-Regular.ttf"
+    - family: "NFH Mono Bold"
+      fonts:
+       - asset: "fonts/HackNerdFontMono-Bold.ttf"
+    - family: "NFH Mono BoldItalic"
+      fonts:
+       - asset: "fonts/HackNerdFontMono-BoldItalic.ttf"
+    - family: "NFH Mono Italic"
+      fonts:
+       - asset: "fonts/HackNerdFontMono-Italic.ttf"
+    - family: "NFH Mono Regular"
+      fonts:
+       - asset: "fonts/HackNerdFontMono-Regular.ttf"
+    - family: "NFH Propo Bold"
+      fonts:
+       - asset: "fonts/HackNerdFontPropo-Bold.ttf"
+    - family: "NFH Propo BoldItalic"
+      fonts:
+       - asset: "fonts/HackNerdFontPropo-BoldItalic.ttf"
+    - family: "NFH Propo Italic"
+      fonts:
+       - asset: "fonts/HackNerdFontPropo-Italic.ttf"
+    - family: "NFH Propo Regular"
+      fonts:
+       - asset: "fonts/HackNerdFontPropo-Regular.ttf"
     
   #
   # For details regarding fonts in packages, see
