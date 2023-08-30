@@ -1,6 +1,6 @@
 name: tdtx_nf_icons
-description: UN package que contiene los icons de Nerd Font
-version: 0.0.1
+description: This package includes Nerd Font icons, providing easy access to its diverse collection of symbols and special characters.
+version: 0.0.2
 homepage: https://github.com/LuisDeLaValie/TDTxNFIcons
 repository: https://github.com/LuisDeLaValie/TDTxNFIcons
 
