@@ -1,6 +1,6 @@
 name: tdtx_nf_icons
 description: This package includes Nerd Font icons, providing easy access to its diverse collection of symbols and special characters.
-version: 3.2.1
+version: 3.2.1+2
 homepage: https://github.com/LuisDeLaValie/TDTxNFIcons
 repository: https://github.com/LuisDeLaValie/TDTxNFIcons
 
@@ -79,42 +79,9 @@ flutter:
   #       - asset: fonts/TrajanPro_Bold.ttf
   #         weight: 700
   fonts:
-    - family: "NFH Bold"
+    - family: "NFH Symbols"
       fonts:
-       - asset: "fonts/HackNerdFont-Bold.ttf"
-    - family: "NFH BoldItalic"
-      fonts:
-       - asset: "fonts/HackNerdFont-BoldItalic.ttf"
-    - family: "NFH Italic"
-      fonts:
-       - asset: "fonts/HackNerdFont-Italic.ttf"
-    - family: "NFH Regular"
-      fonts:
-       - asset: "fonts/HackNerdFont-Regular.ttf"
-    - family: "NFH Mono Bold"
-      fonts:
-       - asset: "fonts/HackNerdFontMono-Bold.ttf"
-    - family: "NFH Mono BoldItalic"
-      fonts:
-       - asset: "fonts/HackNerdFontMono-BoldItalic.ttf"
-    - family: "NFH Mono Italic"
-      fonts:
-       - asset: "fonts/HackNerdFontMono-Italic.ttf"
-    - family: "NFH Mono Regular"
-      fonts:
-       - asset: "fonts/HackNerdFontMono-Regular.ttf"
-    - family: "NFH Propo Bold"
-      fonts:
-       - asset: "fonts/HackNerdFontPropo-Bold.ttf"
-    - family: "NFH Propo BoldItalic"
-      fonts:
-       - asset: "fonts/HackNerdFontPropo-BoldItalic.ttf"
-    - family: "NFH Propo Italic"
-      fonts:
-       - asset: "fonts/HackNerdFontPropo-Italic.ttf"
-    - family: "NFH Propo Regular"
-      fonts:
-       - asset: "fonts/HackNerdFontPropo-Regular.ttf"
+       - asset: "fonts/SymbolsNerdFontMono-Regular.ttf"
     
   #
   # For details regarding fonts in packages, see

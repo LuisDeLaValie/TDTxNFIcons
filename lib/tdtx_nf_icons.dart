@@ -7,11 +7,7 @@ import 'package:flutter/widgets.dart';
 /// Code points can be obtained from nerdfonts.com
 class NFIconData extends IconData {
   const NFIconData(int codePoint)
-      : super(
-          codePoint,
-          fontFamily: "NFH Regular",
-          fontPackage: "tdtx_nf_icons",
-        );
+      : super(codePoint, fontFamily: "NFH Symbols", fontPackage: "tdtx_nf_icons");
 }
 
 	final Map<String, NFIconData> _icons = {
