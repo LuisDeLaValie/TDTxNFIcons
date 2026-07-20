@@ -7,7 +7,11 @@ import 'package:flutter/widgets.dart';
 /// Code points can be obtained from nerdfonts.com
 class NFIconData extends IconData {
   const NFIconData(int codePoint)
-      : super(codePoint, fontFamily: "NFH Symbols", fontPackage: "tdtx_nf_icons");
+      : super(
+          codePoint,
+          fontFamily: "NFH Regular",
+          fontPackage: "tdtx_nf_icons",
+        );
 }
 
 	final Map<String, NFIconData> _icons = {
@@ -452,16 +456,20 @@ class NFIconData extends IconData {
  		'nf-custom-ada': const NFIconData(0xe6b5),
  		'nf-custom-asm': const NFIconData(0xe6ab),
  		'nf-custom-astro': const NFIconData(0xe6b3),
+ 		'nf-custom-bazel': const NFIconData(0xe63a),
  		'nf-custom-c': const NFIconData(0xe61e),
+ 		'nf-custom-chuck': const NFIconData(0xe6b6),
  		'nf-custom-common_lisp': const NFIconData(0xe6b0),
  		'nf-custom-cpp': const NFIconData(0xe61d),
  		'nf-custom-crystal': const NFIconData(0xe62f),
+ 		'nf-custom-css': const NFIconData(0xe6b8),
  		'nf-custom-default': const NFIconData(0xe612),
  		'nf-custom-electron': const NFIconData(0xe62e),
  		'nf-custom-elixir': const NFIconData(0xe62d),
  		'nf-custom-elm': const NFIconData(0xe62c),
  		'nf-custom-emacs': const NFIconData(0xe632),
  		'nf-custom-fennel': const NFIconData(0xe6af),
+ 		'nf-custom-firebase': const NFIconData(0xe657),
  		'nf-custom-folder': const NFIconData(0xe5ff),
  		'nf-custom-folder_config': const NFIconData(0xe5fc),
  		'nf-custom-folder_git': const NFIconData(0xe5fb),
@@ -480,202 +488,533 @@ class NFIconData extends IconData {
  		'nf-custom-prettier': const NFIconData(0xe6b4),
  		'nf-custom-puppet': const NFIconData(0xe631),
  		'nf-custom-purescript': const NFIconData(0xe630),
+ 		'nf-custom-ruby': const NFIconData(0xe605),
  		'nf-custom-scheme': const NFIconData(0xe6b1),
  		'nf-custom-toml': const NFIconData(0xe6b2),
  		'nf-custom-v_lang': const NFIconData(0xe6ac),
  		'nf-custom-vim': const NFIconData(0xe62b),
+ 		'nf-custom-vitruvian': const NFIconData(0xe6b7),
  		'nf-custom-windows': const NFIconData(0xe62a),
+ 		'nf-dev-aarch64': const NFIconData(0xe700),
+ 		'nf-dev-adonisjs': const NFIconData(0xe701),
+ 		'nf-dev-aftereffects': const NFIconData(0xe705),
+ 		'nf-dev-akka': const NFIconData(0xe708),
+ 		'nf-dev-algolia': const NFIconData(0xe70a),
+ 		'nf-dev-alpinejs': const NFIconData(0xe713),
+ 		'nf-dev-amazonwebservices': const NFIconData(0xe7ad),
+ 		'nf-dev-anaconda': const NFIconData(0xe715),
  		'nf-dev-android': const NFIconData(0xe70e),
+ 		'nf-dev-androidstudio': const NFIconData(0xe71a),
  		'nf-dev-angular': const NFIconData(0xe753),
+ 		'nf-dev-angularjs': const NFIconData(0xe71c),
+ 		'nf-dev-angularmaterial': const NFIconData(0xe720),
+ 		'nf-dev-ansible': const NFIconData(0xe723),
+ 		'nf-dev-antdesign': const NFIconData(0xe72a),
+ 		'nf-dev-apache': const NFIconData(0xe72b),
+ 		'nf-dev-apacheairflow': const NFIconData(0xe72c),
+ 		'nf-dev-apachekafka': const NFIconData(0xe72e),
+ 		'nf-dev-apachespark': const NFIconData(0xe72f),
+ 		'nf-dev-apl': const NFIconData(0xe730),
  		'nf-dev-appcelerator': const NFIconData(0xe7ab),
  		'nf-dev-apple': const NFIconData(0xe711),
- 		'nf-dev-appstore': const NFIconData(0xe713),
- 		'nf-dev-aptana': const NFIconData(0xe799),
- 		'nf-dev-asterisk': const NFIconData(0xe7ac),
- 		'nf-dev-atlassian': const NFIconData(0xe75b),
+ 		'nf-dev-appwrite': const NFIconData(0xe731),
+ 		'nf-dev-archlinux': const NFIconData(0xe732),
+ 		'nf-dev-arduino': const NFIconData(0xe733),
+ 		'nf-dev-argocd': const NFIconData(0xe734),
+ 		'nf-dev-astro': const NFIconData(0xe735),
  		'nf-dev-atom': const NFIconData(0xe764),
+ 		'nf-dev-awk': const NFIconData(0xe741),
  		'nf-dev-aws': const NFIconData(0xe7ad),
+ 		'nf-dev-axios': const NFIconData(0xe74f),
+ 		'nf-dev-azure': const NFIconData(0xe754),
+ 		'nf-dev-azuredevops': const NFIconData(0xe756),
+ 		'nf-dev-azuresqldatabase': const NFIconData(0xe75b),
+ 		'nf-dev-babel': const NFIconData(0xe75d),
  		'nf-dev-backbone': const NFIconData(0xe752),
- 		'nf-dev-bing_small': const NFIconData(0xe700),
- 		'nf-dev-bintray': const NFIconData(0xe794),
+ 		'nf-dev-backbonejs': const NFIconData(0xe752),
+ 		'nf-dev-ballerina': const NFIconData(0xe75e),
+ 		'nf-dev-bamboo': const NFIconData(0xe75f),
+ 		'nf-dev-bash': const NFIconData(0xe760),
+ 		'nf-dev-beats': const NFIconData(0xe761),
+ 		'nf-dev-behance': const NFIconData(0xe762),
  		'nf-dev-bitbucket': const NFIconData(0xe703),
- 		'nf-dev-blackberry': const NFIconData(0xe723),
+ 		'nf-dev-blazor': const NFIconData(0xe765),
+ 		'nf-dev-blender': const NFIconData(0xe766),
  		'nf-dev-bootstrap': const NFIconData(0xe747),
  		'nf-dev-bower': const NFIconData(0xe74d),
- 		'nf-dev-brackets': const NFIconData(0xe79d),
- 		'nf-dev-bugsense': const NFIconData(0xe78d),
- 		'nf-dev-celluloid': const NFIconData(0xe76b),
- 		'nf-dev-chart': const NFIconData(0xe760),
+ 		'nf-dev-browserstack': const NFIconData(0xe76b),
+ 		'nf-dev-bulma': const NFIconData(0xe76c),
+ 		'nf-dev-bun': const NFIconData(0xe76f),
+ 		'nf-dev-c': const NFIconData(0xe771),
+ 		'nf-dev-c_lang': const NFIconData(0xe771),
+ 		'nf-dev-cairo': const NFIconData(0xe773),
+ 		'nf-dev-cakephp': const NFIconData(0xe77a),
+ 		'nf-dev-canva': const NFIconData(0xe77c),
+ 		'nf-dev-capacitor': const NFIconData(0xe785),
+ 		'nf-dev-carbon': const NFIconData(0xe788),
+ 		'nf-dev-cassandra': const NFIconData(0xe789),
+ 		'nf-dev-centos': const NFIconData(0xe78a),
+ 		'nf-dev-ceylon': const NFIconData(0xe78b),
  		'nf-dev-chrome': const NFIconData(0xe743),
- 		'nf-dev-cisco': const NFIconData(0xe765),
+ 		'nf-dev-circleci': const NFIconData(0xe78c),
+ 		'nf-dev-clarity': const NFIconData(0xe78d),
+ 		'nf-dev-clion': const NFIconData(0xe78e),
  		'nf-dev-clojure': const NFIconData(0xe768),
  		'nf-dev-clojure_alt': const NFIconData(0xe76a),
- 		'nf-dev-cloud9': const NFIconData(0xe79f),
- 		'nf-dev-coda': const NFIconData(0xe793),
- 		'nf-dev-code': const NFIconData(0xe796),
- 		'nf-dev-code_badge': const NFIconData(0xe7a3),
+ 		'nf-dev-clojurescript': const NFIconData(0xe790),
+ 		'nf-dev-cloudflare': const NFIconData(0xe792),
+ 		'nf-dev-cloudflareworkers': const NFIconData(0xe793),
+ 		'nf-dev-cmake': const NFIconData(0xe794),
+ 		'nf-dev-codeac': const NFIconData(0xe796),
+ 		'nf-dev-codecov': const NFIconData(0xe797),
  		'nf-dev-codeigniter': const NFIconData(0xe780),
  		'nf-dev-codepen': const NFIconData(0xe716),
- 		'nf-dev-codrops': const NFIconData(0xe72f),
  		'nf-dev-coffeescript': const NFIconData(0xe751),
- 		'nf-dev-compass': const NFIconData(0xe761),
  		'nf-dev-composer': const NFIconData(0xe783),
- 		'nf-dev-creativecommons': const NFIconData(0xe789),
- 		'nf-dev-creativecommons_badge': const NFIconData(0xe78a),
+ 		'nf-dev-confluence': const NFIconData(0xe799),
+ 		'nf-dev-consul': const NFIconData(0xe79a),
+ 		'nf-dev-contao': const NFIconData(0xe79b),
+ 		'nf-dev-corejs': const NFIconData(0xe79d),
+ 		'nf-dev-cosmosdb': const NFIconData(0xe79f),
+ 		'nf-dev-couchbase': const NFIconData(0xe7a0),
+ 		'nf-dev-couchdb': const NFIconData(0xe7a2),
+ 		'nf-dev-cplusplus': const NFIconData(0xe7a3),
+ 		'nf-dev-crystal': const NFIconData(0xe7ac),
+ 		'nf-dev-csharp': const NFIconData(0xe7b2),
  		'nf-dev-css3': const NFIconData(0xe749),
  		'nf-dev-css3_full': const NFIconData(0xe74a),
- 		'nf-dev-css_tricks': const NFIconData(0xe701),
- 		'nf-dev-cssdeck': const NFIconData(0xe72a),
+ 		'nf-dev-cucumber': const NFIconData(0xe7b7),
+ 		'nf-dev-cypressio': const NFIconData(0xe7b9),
+ 		'nf-dev-d3js': const NFIconData(0xe7bc),
  		'nf-dev-dart': const NFIconData(0xe798),
  		'nf-dev-database': const NFIconData(0xe706),
+ 		'nf-dev-datagrip': const NFIconData(0xe7bd),
+ 		'nf-dev-dataspell': const NFIconData(0xe7be),
+ 		'nf-dev-dbeaver': const NFIconData(0xe7bf),
  		'nf-dev-debian': const NFIconData(0xe77d),
+ 		'nf-dev-denojs': const NFIconData(0xe7c0),
+ 		'nf-dev-devicon': const NFIconData(0xe7c1),
  		'nf-dev-digital_ocean': const NFIconData(0xe7ae),
+ 		'nf-dev-digitalocean': const NFIconData(0xe7ae),
+ 		'nf-dev-discordjs': const NFIconData(0xe7c2),
  		'nf-dev-django': const NFIconData(0xe71d),
+ 		'nf-dev-djangorest': const NFIconData(0xe7c3),
  		'nf-dev-dlang': const NFIconData(0xe7af),
  		'nf-dev-docker': const NFIconData(0xe7b0),
  		'nf-dev-doctrine': const NFIconData(0xe774),
- 		'nf-dev-dojo': const NFIconData(0xe71c),
  		'nf-dev-dotnet': const NFIconData(0xe77f),
+ 		'nf-dev-dotnetcore': const NFIconData(0xe7c6),
  		'nf-dev-dreamweaver': const NFIconData(0xe79c),
  		'nf-dev-dropbox': const NFIconData(0xe707),
+ 		'nf-dev-dropwizard': const NFIconData(0xe7c7),
  		'nf-dev-drupal': const NFIconData(0xe742),
+ 		'nf-dev-dynamodb': const NFIconData(0xe7c8),
  		'nf-dev-eclipse': const NFIconData(0xe79e),
+ 		'nf-dev-ecto': const NFIconData(0xe7c9),
+ 		'nf-dev-elasticsearch': const NFIconData(0xe7ca),
+ 		'nf-dev-electron': const NFIconData(0xe7cb),
+ 		'nf-dev-eleventy': const NFIconData(0xe7cc),
+ 		'nf-dev-elixir': const NFIconData(0xe7cd),
+ 		'nf-dev-elm': const NFIconData(0xe7ce),
+ 		'nf-dev-emacs': const NFIconData(0xe7cf),
+ 		'nf-dev-embeddedc': const NFIconData(0xe7d0),
  		'nf-dev-ember': const NFIconData(0xe71b),
- 		'nf-dev-envato': const NFIconData(0xe75d),
+ 		'nf-dev-envoy': const NFIconData(0xe7d1),
  		'nf-dev-erlang': const NFIconData(0xe7b1),
- 		'nf-dev-extjs': const NFIconData(0xe78e),
+ 		'nf-dev-eslint': const NFIconData(0xe7d2),
+ 		'nf-dev-express': const NFIconData(0xe7d3),
+ 		'nf-dev-facebook': const NFIconData(0xe7d4),
+ 		'nf-dev-fastapi': const NFIconData(0xe7d5),
+ 		'nf-dev-fastify': const NFIconData(0xe7d6),
+ 		'nf-dev-faunadb': const NFIconData(0xe7d7),
+ 		'nf-dev-feathersjs': const NFIconData(0xe7d8),
+ 		'nf-dev-fedora': const NFIconData(0xe7d9),
+ 		'nf-dev-figma': const NFIconData(0xe7da),
+ 		'nf-dev-filezilla': const NFIconData(0xe7db),
  		'nf-dev-firebase': const NFIconData(0xe787),
  		'nf-dev-firefox': const NFIconData(0xe745),
+ 		'nf-dev-flask': const NFIconData(0xe7dc),
+ 		'nf-dev-flutter': const NFIconData(0xe7dd),
+ 		'nf-dev-fortran': const NFIconData(0xe7de),
+ 		'nf-dev-foundation': const NFIconData(0xe7df),
+ 		'nf-dev-framermotion': const NFIconData(0xe7e0),
+ 		'nf-dev-framework7': const NFIconData(0xe7e1),
  		'nf-dev-fsharp': const NFIconData(0xe7a7),
+ 		'nf-dev-gatling': const NFIconData(0xe7e2),
+ 		'nf-dev-gatsby': const NFIconData(0xe7e3),
+ 		'nf-dev-gazebo': const NFIconData(0xe7e4),
+ 		'nf-dev-gcc': const NFIconData(0xe7e5),
+ 		'nf-dev-gentoo': const NFIconData(0xe7e6),
  		'nf-dev-ghost': const NFIconData(0xe71f),
  		'nf-dev-ghost_small': const NFIconData(0xe714),
+ 		'nf-dev-gimp': const NFIconData(0xe7e7),
  		'nf-dev-git': const NFIconData(0xe702),
  		'nf-dev-git_branch': const NFIconData(0xe725),
  		'nf-dev-git_commit': const NFIconData(0xe729),
  		'nf-dev-git_compare': const NFIconData(0xe728),
  		'nf-dev-git_merge': const NFIconData(0xe727),
  		'nf-dev-git_pull_request': const NFIconData(0xe726),
- 		'nf-dev-github': const NFIconData(0xe70a),
- 		'nf-dev-github_alt': const NFIconData(0xe708),
+ 		'nf-dev-gitbook': const NFIconData(0xe7e8),
+ 		'nf-dev-github': const NFIconData(0xe709),
  		'nf-dev-github_badge': const NFIconData(0xe709),
  		'nf-dev-github_full': const NFIconData(0xe717),
+ 		'nf-dev-githubactions': const NFIconData(0xe7e9),
+ 		'nf-dev-githubcodespaces': const NFIconData(0xe7ea),
+ 		'nf-dev-gitlab': const NFIconData(0xe7eb),
+ 		'nf-dev-gitpod': const NFIconData(0xe7ec),
+ 		'nf-dev-gitter': const NFIconData(0xe7ed),
  		'nf-dev-gnu': const NFIconData(0xe779),
  		'nf-dev-go': const NFIconData(0xe724),
- 		'nf-dev-google_cloud_platform': const NFIconData(0xe7b2),
- 		'nf-dev-google_drive': const NFIconData(0xe731),
+ 		'nf-dev-godot': const NFIconData(0xe7ee),
+ 		'nf-dev-goland': const NFIconData(0xe7ef),
+ 		'nf-dev-google': const NFIconData(0xe7f0),
+ 		'nf-dev-googlecloud': const NFIconData(0xe7f1),
+ 		'nf-dev-gradle': const NFIconData(0xe7f2),
+ 		'nf-dev-grafana': const NFIconData(0xe7f3),
  		'nf-dev-grails': const NFIconData(0xe7b3),
+ 		'nf-dev-graphql': const NFIconData(0xe7f4),
  		'nf-dev-groovy': const NFIconData(0xe775),
+ 		'nf-dev-grpc': const NFIconData(0xe7f5),
  		'nf-dev-grunt': const NFIconData(0xe74c),
  		'nf-dev-gulp': const NFIconData(0xe763),
- 		'nf-dev-hackernews': const NFIconData(0xe71a),
+ 		'nf-dev-hadoop': const NFIconData(0xe7f6),
+ 		'nf-dev-handlebars': const NFIconData(0xe7f7),
+ 		'nf-dev-hardhat': const NFIconData(0xe7f8),
+ 		'nf-dev-harvester': const NFIconData(0xe7f9),
  		'nf-dev-haskell': const NFIconData(0xe777),
+ 		'nf-dev-haxe': const NFIconData(0xe7fa),
+ 		'nf-dev-helm': const NFIconData(0xe7fb),
  		'nf-dev-heroku': const NFIconData(0xe77b),
+ 		'nf-dev-hibernate': const NFIconData(0xe7fc),
+ 		'nf-dev-homebrew': const NFIconData(0xe7fd),
  		'nf-dev-html5': const NFIconData(0xe736),
- 		'nf-dev-html5_3d_effects': const NFIconData(0xe735),
- 		'nf-dev-html5_connectivity': const NFIconData(0xe734),
- 		'nf-dev-html5_device_access': const NFIconData(0xe733),
- 		'nf-dev-html5_multimedia': const NFIconData(0xe732),
+ 		'nf-dev-hugo': const NFIconData(0xe7fe),
  		'nf-dev-ie': const NFIconData(0xe744),
+ 		'nf-dev-ifttt': const NFIconData(0xe7ff),
  		'nf-dev-illustrator': const NFIconData(0xe7b4),
+ 		'nf-dev-influxdb': const NFIconData(0xe800),
+ 		'nf-dev-inkscape': const NFIconData(0xe801),
+ 		'nf-dev-insomnia': const NFIconData(0xe802),
  		'nf-dev-intellij': const NFIconData(0xe7b5),
  		'nf-dev-ionic': const NFIconData(0xe7a9),
+ 		'nf-dev-jaegertracing': const NFIconData(0xe803),
+ 		'nf-dev-jamstack': const NFIconData(0xe804),
+ 		'nf-dev-jasmine': const NFIconData(0xe805),
  		'nf-dev-java': const NFIconData(0xe738),
- 		'nf-dev-javascript': const NFIconData(0xe74e),
+ 		'nf-dev-javascript': const NFIconData(0xe781),
+ 		'nf-dev-javascript_alt': const NFIconData(0xe74e),
  		'nf-dev-javascript_badge': const NFIconData(0xe781),
- 		'nf-dev-javascript_shield': const NFIconData(0xe74f),
+ 		'nf-dev-jeet': const NFIconData(0xe806),
+ 		'nf-dev-jekyll': const NFIconData(0xe70d),
  		'nf-dev-jekyll_small': const NFIconData(0xe70d),
  		'nf-dev-jenkins': const NFIconData(0xe767),
+ 		'nf-dev-jest': const NFIconData(0xe807),
+ 		'nf-dev-jetbrains': const NFIconData(0xe808),
+ 		'nf-dev-jetpackcompose': const NFIconData(0xe809),
  		'nf-dev-jira': const NFIconData(0xe75c),
- 		'nf-dev-joomla': const NFIconData(0xe741),
+ 		'nf-dev-jiraalign': const NFIconData(0xe80a),
  		'nf-dev-jquery': const NFIconData(0xe750),
- 		'nf-dev-jquery_ui': const NFIconData(0xe754),
- 		'nf-dev-komodo': const NFIconData(0xe792),
- 		'nf-dev-krakenjs': const NFIconData(0xe785),
+ 		'nf-dev-json': const NFIconData(0xe80b),
+ 		'nf-dev-jule': const NFIconData(0xe80c),
+ 		'nf-dev-julia': const NFIconData(0xe80d),
+ 		'nf-dev-junit': const NFIconData(0xe80e),
+ 		'nf-dev-jupyter': const NFIconData(0xe80f),
+ 		'nf-dev-k3os': const NFIconData(0xe810),
+ 		'nf-dev-k3s': const NFIconData(0xe811),
+ 		'nf-dev-k6': const NFIconData(0xe812),
+ 		'nf-dev-kaggle': const NFIconData(0xe813),
+ 		'nf-dev-karatelabs': const NFIconData(0xe814),
+ 		'nf-dev-karma': const NFIconData(0xe815),
+ 		'nf-dev-kdeneon': const NFIconData(0xe816),
+ 		'nf-dev-keras': const NFIconData(0xe817),
+ 		'nf-dev-kibana': const NFIconData(0xe818),
+ 		'nf-dev-knexjs': const NFIconData(0xe819),
+ 		'nf-dev-knockout': const NFIconData(0xe81a),
+ 		'nf-dev-kotlin': const NFIconData(0xe81b),
+ 		'nf-dev-krakenjs': const NFIconData(0xe784),
  		'nf-dev-krakenjs_badge': const NFIconData(0xe784),
+ 		'nf-dev-ktor': const NFIconData(0xe81c),
+ 		'nf-dev-kubernetes': const NFIconData(0xe81d),
+ 		'nf-dev-labview': const NFIconData(0xe81e),
  		'nf-dev-laravel': const NFIconData(0xe73f),
+ 		'nf-dev-latex': const NFIconData(0xe81f),
  		'nf-dev-less': const NFIconData(0xe758),
+ 		'nf-dev-linkedin': const NFIconData(0xe820),
  		'nf-dev-linux': const NFIconData(0xe712),
+ 		'nf-dev-liquibase': const NFIconData(0xe821),
+ 		'nf-dev-livewire': const NFIconData(0xe822),
+ 		'nf-dev-llvm': const NFIconData(0xe823),
+ 		'nf-dev-lodash': const NFIconData(0xe824),
+ 		'nf-dev-logstash': const NFIconData(0xe825),
+ 		'nf-dev-lua': const NFIconData(0xe826),
+ 		'nf-dev-lumen': const NFIconData(0xe827),
  		'nf-dev-magento': const NFIconData(0xe740),
- 		'nf-dev-mailchimp': const NFIconData(0xe79a),
+ 		'nf-dev-mariadb': const NFIconData(0xe828),
  		'nf-dev-markdown': const NFIconData(0xe73e),
  		'nf-dev-materializecss': const NFIconData(0xe7b6),
+ 		'nf-dev-materialui': const NFIconData(0xe829),
+ 		'nf-dev-matlab': const NFIconData(0xe82a),
+ 		'nf-dev-matplotlib': const NFIconData(0xe82b),
+ 		'nf-dev-maven': const NFIconData(0xe82c),
+ 		'nf-dev-maya': const NFIconData(0xe82d),
  		'nf-dev-meteor': const NFIconData(0xe7a5),
  		'nf-dev-meteorfull': const NFIconData(0xe7a6),
- 		'nf-dev-mitlicence': const NFIconData(0xe78b),
- 		'nf-dev-modernizr': const NFIconData(0xe720),
+ 		'nf-dev-microsoftsqlserver': const NFIconData(0xe82e),
+ 		'nf-dev-minitab': const NFIconData(0xe82f),
+ 		'nf-dev-mithril': const NFIconData(0xe830),
+ 		'nf-dev-mobx': const NFIconData(0xe831),
+ 		'nf-dev-mocha': const NFIconData(0xe832),
+ 		'nf-dev-modx': const NFIconData(0xe833),
+ 		'nf-dev-moleculer': const NFIconData(0xe834),
  		'nf-dev-mongodb': const NFIconData(0xe7a4),
- 		'nf-dev-mootools': const NFIconData(0xe790),
+ 		'nf-dev-mongoose': const NFIconData(0xe835),
+ 		'nf-dev-moodle': const NFIconData(0xe836),
  		'nf-dev-mootools_badge': const NFIconData(0xe78f),
  		'nf-dev-mozilla': const NFIconData(0xe786),
- 		'nf-dev-msql_server': const NFIconData(0xe77c),
+ 		'nf-dev-msdos': const NFIconData(0xe837),
  		'nf-dev-mysql': const NFIconData(0xe704),
- 		'nf-dev-nancy': const NFIconData(0xe766),
- 		'nf-dev-netbeans': const NFIconData(0xe79b),
- 		'nf-dev-netmagazine': const NFIconData(0xe72e),
+ 		'nf-dev-nano': const NFIconData(0xe838),
+ 		'nf-dev-neo4j': const NFIconData(0xe839),
+ 		'nf-dev-neovim': const NFIconData(0xe83a),
+ 		'nf-dev-nestjs': const NFIconData(0xe83b),
+ 		'nf-dev-netlify': const NFIconData(0xe83c),
+ 		'nf-dev-networkx': const NFIconData(0xe83d),
+ 		'nf-dev-nextjs': const NFIconData(0xe83e),
  		'nf-dev-nginx': const NFIconData(0xe776),
+ 		'nf-dev-ngrx': const NFIconData(0xe83f),
+ 		'nf-dev-nhibernate': const NFIconData(0xe840),
+ 		'nf-dev-nim': const NFIconData(0xe841),
+ 		'nf-dev-nimble': const NFIconData(0xe842),
+ 		'nf-dev-nixos': const NFIconData(0xe843),
  		'nf-dev-nodejs': const NFIconData(0xe719),
  		'nf-dev-nodejs_small': const NFIconData(0xe718),
+ 		'nf-dev-nodemon': const NFIconData(0xe844),
+ 		'nf-dev-nodewebkit': const NFIconData(0xe845),
+ 		'nf-dev-nomad': const NFIconData(0xe846),
+ 		'nf-dev-norg': const NFIconData(0xe847),
+ 		'nf-dev-notion': const NFIconData(0xe848),
  		'nf-dev-npm': const NFIconData(0xe71e),
- 		'nf-dev-onedrive': const NFIconData(0xe762),
- 		'nf-dev-openshift': const NFIconData(0xe7b7),
- 		'nf-dev-opensource': const NFIconData(0xe771),
+ 		'nf-dev-nuget': const NFIconData(0xe849),
+ 		'nf-dev-numpy': const NFIconData(0xe84a),
+ 		'nf-dev-nuxtjs': const NFIconData(0xe84b),
+ 		'nf-dev-oauth': const NFIconData(0xe84c),
+ 		'nf-dev-objectivec': const NFIconData(0xe84d),
+ 		'nf-dev-ocaml': const NFIconData(0xe84e),
+ 		'nf-dev-ohmyzsh': const NFIconData(0xe84f),
+ 		'nf-dev-okta': const NFIconData(0xe850),
+ 		'nf-dev-openal': const NFIconData(0xe851),
+ 		'nf-dev-openapi': const NFIconData(0xe852),
+ 		'nf-dev-opencl': const NFIconData(0xe853),
+ 		'nf-dev-opencv': const NFIconData(0xe854),
+ 		'nf-dev-opengl': const NFIconData(0xe855),
+ 		'nf-dev-openstack': const NFIconData(0xe856),
+ 		'nf-dev-opensuse': const NFIconData(0xe857),
+ 		'nf-dev-opentelemetry': const NFIconData(0xe858),
  		'nf-dev-opera': const NFIconData(0xe746),
+ 		'nf-dev-oracle': const NFIconData(0xe859),
+ 		'nf-dev-ory': const NFIconData(0xe85a),
+ 		'nf-dev-p5js': const NFIconData(0xe85b),
+ 		'nf-dev-packer': const NFIconData(0xe85c),
+ 		'nf-dev-pandas': const NFIconData(0xe85d),
  		'nf-dev-perl': const NFIconData(0xe769),
- 		'nf-dev-phonegap': const NFIconData(0xe730),
+ 		'nf-dev-pfsense': const NFIconData(0xe85e),
+ 		'nf-dev-phalcon': const NFIconData(0xe85f),
+ 		'nf-dev-phoenix': const NFIconData(0xe860),
+ 		'nf-dev-photonengine': const NFIconData(0xe861),
  		'nf-dev-photoshop': const NFIconData(0xe7b8),
  		'nf-dev-php': const NFIconData(0xe73d),
+ 		'nf-dev-phpstorm': const NFIconData(0xe862),
+ 		'nf-dev-playwright': const NFIconData(0xe863),
+ 		'nf-dev-plotly': const NFIconData(0xe864),
+ 		'nf-dev-pnpm': const NFIconData(0xe865),
+ 		'nf-dev-podman': const NFIconData(0xe866),
+ 		'nf-dev-poetry': const NFIconData(0xe867),
+ 		'nf-dev-polygon': const NFIconData(0xe868),
+ 		'nf-dev-portainer': const NFIconData(0xe869),
+ 		'nf-dev-postcss': const NFIconData(0xe86a),
  		'nf-dev-postgresql': const NFIconData(0xe76e),
+ 		'nf-dev-postman': const NFIconData(0xe86b),
+ 		'nf-dev-powershell': const NFIconData(0xe86c),
+ 		'nf-dev-premierepro': const NFIconData(0xe86d),
+ 		'nf-dev-prisma': const NFIconData(0xe86e),
+ 		'nf-dev-processing': const NFIconData(0xe86f),
  		'nf-dev-prolog': const NFIconData(0xe7a1),
+ 		'nf-dev-prometheus': const NFIconData(0xe870),
+ 		'nf-dev-protractor': const NFIconData(0xe871),
+ 		'nf-dev-pulsar': const NFIconData(0xe872),
+ 		'nf-dev-pulumi': const NFIconData(0xe873),
+ 		'nf-dev-puppeteer': const NFIconData(0xe874),
+ 		'nf-dev-purescript': const NFIconData(0xe875),
+ 		'nf-dev-putty': const NFIconData(0xe876),
+ 		'nf-dev-pycharm': const NFIconData(0xe877),
+ 		'nf-dev-pypi': const NFIconData(0xe878),
+ 		'nf-dev-pyscript': const NFIconData(0xe879),
+ 		'nf-dev-pytest': const NFIconData(0xe87a),
  		'nf-dev-python': const NFIconData(0xe73c),
- 		'nf-dev-rackspace': const NFIconData(0xe7b9),
- 		'nf-dev-raphael': const NFIconData(0xe75f),
- 		'nf-dev-rasberry_pi': const NFIconData(0xe722),
+ 		'nf-dev-pytorch': const NFIconData(0xe87b),
+ 		'nf-dev-qodana': const NFIconData(0xe87c),
+ 		'nf-dev-qt': const NFIconData(0xe87d),
+ 		'nf-dev-quarkus': const NFIconData(0xe87e),
+ 		'nf-dev-quasar': const NFIconData(0xe87f),
+ 		'nf-dev-qwik': const NFIconData(0xe880),
+ 		'nf-dev-r': const NFIconData(0xe881),
+ 		'nf-dev-rabbitmq': const NFIconData(0xe882),
+ 		'nf-dev-rails': const NFIconData(0xe73b),
+ 		'nf-dev-railway': const NFIconData(0xe883),
+ 		'nf-dev-rancher': const NFIconData(0xe884),
+ 		'nf-dev-raspberry_pi': const NFIconData(0xe722),
+ 		'nf-dev-reach': const NFIconData(0xe885),
  		'nf-dev-react': const NFIconData(0xe7ba),
+ 		'nf-dev-reactbootstrap': const NFIconData(0xe886),
+ 		'nf-dev-reactnavigation': const NFIconData(0xe887),
+ 		'nf-dev-reactrouter': const NFIconData(0xe888),
+ 		'nf-dev-readthedocs': const NFIconData(0xe889),
+ 		'nf-dev-realm': const NFIconData(0xe88a),
+ 		'nf-dev-rect': const NFIconData(0xe88b),
  		'nf-dev-redhat': const NFIconData(0xe7bb),
  		'nf-dev-redis': const NFIconData(0xe76d),
+ 		'nf-dev-redux': const NFIconData(0xe88c),
+ 		'nf-dev-renpy': const NFIconData(0xe88d),
+ 		'nf-dev-replit': const NFIconData(0xe88e),
  		'nf-dev-requirejs': const NFIconData(0xe770),
- 		'nf-dev-responsive': const NFIconData(0xe797),
+ 		'nf-dev-rider': const NFIconData(0xe88f),
+ 		'nf-dev-rocksdb': const NFIconData(0xe890),
+ 		'nf-dev-rockylinux': const NFIconData(0xe891),
+ 		'nf-dev-rollup': const NFIconData(0xe892),
+ 		'nf-dev-ros': const NFIconData(0xe893),
+ 		'nf-dev-rspec': const NFIconData(0xe894),
+ 		'nf-dev-rstudio': const NFIconData(0xe895),
  		'nf-dev-ruby': const NFIconData(0xe739),
  		'nf-dev-ruby_on_rails': const NFIconData(0xe73b),
  		'nf-dev-ruby_rough': const NFIconData(0xe791),
+ 		'nf-dev-rubymine': const NFIconData(0xe896),
  		'nf-dev-rust': const NFIconData(0xe7a8),
+ 		'nf-dev-rxjs': const NFIconData(0xe897),
  		'nf-dev-safari': const NFIconData(0xe748),
+ 		'nf-dev-salesforce': const NFIconData(0xe898),
+ 		'nf-dev-sanity': const NFIconData(0xe899),
  		'nf-dev-sass': const NFIconData(0xe74b),
  		'nf-dev-scala': const NFIconData(0xe737),
- 		'nf-dev-scriptcs': const NFIconData(0xe7bc),
- 		'nf-dev-scrum': const NFIconData(0xe7a0),
- 		'nf-dev-senchatouch': const NFIconData(0xe78c),
- 		'nf-dev-sizzlejs': const NFIconData(0xe788),
+ 		'nf-dev-scalingo': const NFIconData(0xe89a),
+ 		'nf-dev-scikitlearn': const NFIconData(0xe89b),
+ 		'nf-dev-sdl': const NFIconData(0xe89c),
+ 		'nf-dev-selenium': const NFIconData(0xe89d),
+ 		'nf-dev-sema': const NFIconData(0xe89e),
+ 		'nf-dev-sentry': const NFIconData(0xe89f),
+ 		'nf-dev-sequelize': const NFIconData(0xe8a0),
+ 		'nf-dev-shopware': const NFIconData(0xe8a1),
+ 		'nf-dev-shotgrid': const NFIconData(0xe8a2),
+ 		'nf-dev-sketch': const NFIconData(0xe8a3),
+ 		'nf-dev-slack': const NFIconData(0xe8a4),
  		'nf-dev-smashing_magazine': const NFIconData(0xe72d),
- 		'nf-dev-snap_svg': const NFIconData(0xe75e),
- 		'nf-dev-sqllite': const NFIconData(0xe7c4),
+ 		'nf-dev-socketio': const NFIconData(0xe8a5),
+ 		'nf-dev-solidity': const NFIconData(0xe8a6),
+ 		'nf-dev-solidjs': const NFIconData(0xe8a7),
+ 		'nf-dev-sonarqube': const NFIconData(0xe8a8),
+ 		'nf-dev-sourcetree': const NFIconData(0xe8a9),
+ 		'nf-dev-spack': const NFIconData(0xe8aa),
+ 		'nf-dev-splunk': const NFIconData(0xe8ab),
+ 		'nf-dev-spring': const NFIconData(0xe8ac),
+ 		'nf-dev-spss': const NFIconData(0xe8ad),
+ 		'nf-dev-spyder': const NFIconData(0xe8ae),
+ 		'nf-dev-sqlalchemy': const NFIconData(0xe8af),
+ 		'nf-dev-sqldeveloper': const NFIconData(0xe8b0),
+ 		'nf-dev-sqlite': const NFIconData(0xe7c4),
+ 		'nf-dev-ssh': const NFIconData(0xe8b1),
  		'nf-dev-stackoverflow': const NFIconData(0xe710),
- 		'nf-dev-streamline': const NFIconData(0xe705),
+ 		'nf-dev-stata': const NFIconData(0xe8b2),
+ 		'nf-dev-storybook': const NFIconData(0xe8b3),
+ 		'nf-dev-streamlit': const NFIconData(0xe8b4),
  		'nf-dev-stylus': const NFIconData(0xe759),
  		'nf-dev-sublime': const NFIconData(0xe7aa),
+ 		'nf-dev-subversion': const NFIconData(0xe8b5),
+ 		'nf-dev-supabase': const NFIconData(0xe8b6),
+ 		'nf-dev-svelte': const NFIconData(0xe8b7),
+ 		'nf-dev-swagger': const NFIconData(0xe8b8),
  		'nf-dev-swift': const NFIconData(0xe755),
- 		'nf-dev-symfony': const NFIconData(0xe756),
+ 		'nf-dev-swiper': const NFIconData(0xe8b9),
+ 		'nf-dev-symfony': const NFIconData(0xe757),
  		'nf-dev-symfony_badge': const NFIconData(0xe757),
- 		'nf-dev-techcrunch': const NFIconData(0xe72c),
+ 		'nf-dev-tailwindcss': const NFIconData(0xe8ba),
+ 		'nf-dev-tauri': const NFIconData(0xe8bb),
+ 		'nf-dev-tensorflow': const NFIconData(0xe8bc),
  		'nf-dev-terminal': const NFIconData(0xe795),
- 		'nf-dev-terminal_badge': const NFIconData(0xe7a2),
+ 		'nf-dev-terraform': const NFIconData(0xe8bd),
+ 		'nf-dev-tex': const NFIconData(0xe8be),
+ 		'nf-dev-thealgorithms': const NFIconData(0xe8bf),
+ 		'nf-dev-threedsmax': const NFIconData(0xe8c0),
+ 		'nf-dev-threejs': const NFIconData(0xe8c1),
+ 		'nf-dev-titaniumsdk': const NFIconData(0xe8c2),
+ 		'nf-dev-tomcat': const NFIconData(0xe8c3),
+ 		'nf-dev-tortoisegit': const NFIconData(0xe8c4),
+ 		'nf-dev-towergit': const NFIconData(0xe8c5),
+ 		'nf-dev-traefikmesh': const NFIconData(0xe8c6),
+ 		'nf-dev-traefikproxy': const NFIconData(0xe8c7),
  		'nf-dev-travis': const NFIconData(0xe77e),
  		'nf-dev-trello': const NFIconData(0xe75a),
+ 		'nf-dev-trpc': const NFIconData(0xe8c8),
+ 		'nf-dev-twitter': const NFIconData(0xe8c9),
+ 		'nf-dev-typescript': const NFIconData(0xe8ca),
  		'nf-dev-typo3': const NFIconData(0xe772),
  		'nf-dev-ubuntu': const NFIconData(0xe73a),
- 		'nf-dev-uikit': const NFIconData(0xe773),
+ 		'nf-dev-uml': const NFIconData(0xe8cb),
+ 		'nf-dev-unifiedmodelinglanguage': const NFIconData(0xe8cb),
+ 		'nf-dev-unity': const NFIconData(0xe721),
  		'nf-dev-unity_small': const NFIconData(0xe721),
+ 		'nf-dev-unix': const NFIconData(0xe8cc),
+ 		'nf-dev-unrealengine': const NFIconData(0xe8cd),
+ 		'nf-dev-uwsgi': const NFIconData(0xe8ce),
+ 		'nf-dev-v8': const NFIconData(0xe8cf),
+ 		'nf-dev-vagrant': const NFIconData(0xe8d0),
+ 		'nf-dev-vala': const NFIconData(0xe8d1),
+ 		'nf-dev-vault': const NFIconData(0xe8d2),
+ 		'nf-dev-vercel': const NFIconData(0xe8d3),
+ 		'nf-dev-vertx': const NFIconData(0xe8d4),
  		'nf-dev-vim': const NFIconData(0xe7c5),
+ 		'nf-dev-visualbasic': const NFIconData(0xe8d5),
  		'nf-dev-visualstudio': const NFIconData(0xe70c),
- 		'nf-dev-w3c': const NFIconData(0xe76c),
- 		'nf-dev-webplatform': const NFIconData(0xe76f),
+ 		'nf-dev-vite': const NFIconData(0xe8d6),
+ 		'nf-dev-vitejs': const NFIconData(0xe8d7),
+ 		'nf-dev-vitess': const NFIconData(0xe8d8),
+ 		'nf-dev-vitest': const NFIconData(0xe8d9),
+ 		'nf-dev-vscode': const NFIconData(0xe8da),
+ 		'nf-dev-vsphere': const NFIconData(0xe8db),
+ 		'nf-dev-vuejs': const NFIconData(0xe8dc),
+ 		'nf-dev-vuestorefront': const NFIconData(0xe8dd),
+ 		'nf-dev-vuetify': const NFIconData(0xe8de),
+ 		'nf-dev-vyper': const NFIconData(0xe8df),
+ 		'nf-dev-wasm': const NFIconData(0xe8e0),
+ 		'nf-dev-webflow': const NFIconData(0xe8e1),
+ 		'nf-dev-weblate': const NFIconData(0xe8e2),
+ 		'nf-dev-webpack': const NFIconData(0xe8e3),
+ 		'nf-dev-webstorm': const NFIconData(0xe8e4),
  		'nf-dev-windows': const NFIconData(0xe70f),
+ 		'nf-dev-windows11': const NFIconData(0xe8e5),
+ 		'nf-dev-woocommerce': const NFIconData(0xe8e6),
  		'nf-dev-wordpress': const NFIconData(0xe70b),
- 		'nf-dev-yahoo': const NFIconData(0xe715),
- 		'nf-dev-yahoo_small': const NFIconData(0xe72b),
- 		'nf-dev-yeoman': const NFIconData(0xe77a),
+ 		'nf-dev-xamarin': const NFIconData(0xe8e7),
+ 		'nf-dev-xcode': const NFIconData(0xe8e8),
+ 		'nf-dev-xd': const NFIconData(0xe8e9),
+ 		'nf-dev-xml': const NFIconData(0xe8ea),
+ 		'nf-dev-yaml': const NFIconData(0xe8eb),
+ 		'nf-dev-yarn': const NFIconData(0xe8ec),
  		'nf-dev-yii': const NFIconData(0xe782),
+ 		'nf-dev-yugabytedb': const NFIconData(0xe8ed),
+ 		'nf-dev-yunohost': const NFIconData(0xe8ee),
  		'nf-dev-zend': const NFIconData(0xe778),
+ 		'nf-dev-zig': const NFIconData(0xe8ef),
+ 		'nf-extra-progress_empty_left': const NFIconData(0xee00),
+ 		'nf-extra-progress_empty_mid': const NFIconData(0xee01),
+ 		'nf-extra-progress_empty_right': const NFIconData(0xee02),
+ 		'nf-extra-progress_full_left': const NFIconData(0xee03),
+ 		'nf-extra-progress_full_mid': const NFIconData(0xee04),
+ 		'nf-extra-progress_full_right': const NFIconData(0xee05),
+ 		'nf-extra-progress_spinner_1': const NFIconData(0xee06),
+ 		'nf-extra-progress_spinner_2': const NFIconData(0xee07),
+ 		'nf-extra-progress_spinner_3': const NFIconData(0xee08),
+ 		'nf-extra-progress_spinner_4': const NFIconData(0xee09),
+ 		'nf-extra-progress_spinner_5': const NFIconData(0xee0a),
+ 		'nf-extra-progress_spinner_6': const NFIconData(0xee0b),
  		'nf-fa-500px': const NFIconData(0xf26e),
  		'nf-fa-accessible_icon': const NFIconData(0xf29b),
  		'nf-fa-accusoft': const NFIconData(0xf0b7),
@@ -2731,6 +3070,14 @@ class NFIconData extends IconData {
  		'nf-linux-krita': const NFIconData(0xf33d),
  		'nf-linux-kubuntu': const NFIconData(0xf333),
  		'nf-linux-kubuntu_inverse': const NFIconData(0xf334),
+ 		'nf-linux-leap': const NFIconData(0xf37e),
+ 		'nf-linux-libreoffice': const NFIconData(0xf376),
+ 		'nf-linux-libreofficebase': const NFIconData(0xf377),
+ 		'nf-linux-libreofficecalc': const NFIconData(0xf378),
+ 		'nf-linux-libreofficedraw': const NFIconData(0xf379),
+ 		'nf-linux-libreofficeimpress': const NFIconData(0xf37a),
+ 		'nf-linux-libreofficemath': const NFIconData(0xf37b),
+ 		'nf-linux-libreofficewriter': const NFIconData(0xf37c),
  		'nf-linux-linuxmint': const NFIconData(0xf30e),
  		'nf-linux-linuxmint_inverse': const NFIconData(0xf30f),
  		'nf-linux-locos': const NFIconData(0xf349),
@@ -2745,6 +3092,7 @@ class NFIconData extends IconData {
  		'nf-linux-mxlinux': const NFIconData(0xf33f),
  		'nf-linux-neovim': const NFIconData(0xf36f),
  		'nf-linux-nixos': const NFIconData(0xf313),
+ 		'nf-linux-nobara': const NFIconData(0xf380),
  		'nf-linux-octoprint': const NFIconData(0xf34d),
  		'nf-linux-openbsd': const NFIconData(0xf328),
  		'nf-linux-openscad': const NFIconData(0xf34e),
@@ -2765,6 +3113,7 @@ class NFIconData extends IconData {
  		'nf-linux-redhat': const NFIconData(0xf316),
  		'nf-linux-reprap': const NFIconData(0xf352),
  		'nf-linux-riscv': const NFIconData(0xf353),
+ 		'nf-linux-river': const NFIconData(0xf381),
  		'nf-linux-rocky_linux': const NFIconData(0xf32b),
  		'nf-linux-sabayon': const NFIconData(0xf317),
  		'nf-linux-slackware': const NFIconData(0xf318),
@@ -2776,7 +3125,9 @@ class NFIconData extends IconData {
  		'nf-linux-thunderbird': const NFIconData(0xf370),
  		'nf-linux-tor': const NFIconData(0xf371),
  		'nf-linux-trisquel': const NFIconData(0xf344),
+ 		'nf-linux-tumbleweed': const NFIconData(0xf37d),
  		'nf-linux-tux': const NFIconData(0xf31a),
+ 		'nf-linux-typst': const NFIconData(0xf37f),
  		'nf-linux-ubuntu': const NFIconData(0xf31b),
  		'nf-linux-ubuntu_inverse': const NFIconData(0xf31c),
  		'nf-linux-vanilla': const NFIconData(0xf366),
@@ -10874,16 +11225,20 @@ class TDTxNFIcons {
  	static final IconData nf_custom_ada = _icons['nf-custom-ada']!;
  	static final IconData nf_custom_asm = _icons['nf-custom-asm']!;
  	static final IconData nf_custom_astro = _icons['nf-custom-astro']!;
+ 	static final IconData nf_custom_bazel = _icons['nf-custom-bazel']!;
  	static final IconData nf_custom_c = _icons['nf-custom-c']!;
+ 	static final IconData nf_custom_chuck = _icons['nf-custom-chuck']!;
  	static final IconData nf_custom_common_lisp = _icons['nf-custom-common_lisp']!;
  	static final IconData nf_custom_cpp = _icons['nf-custom-cpp']!;
  	static final IconData nf_custom_crystal = _icons['nf-custom-crystal']!;
+ 	static final IconData nf_custom_css = _icons['nf-custom-css']!;
  	static final IconData nf_custom_default = _icons['nf-custom-default']!;
  	static final IconData nf_custom_electron = _icons['nf-custom-electron']!;
  	static final IconData nf_custom_elixir = _icons['nf-custom-elixir']!;
  	static final IconData nf_custom_elm = _icons['nf-custom-elm']!;
  	static final IconData nf_custom_emacs = _icons['nf-custom-emacs']!;
  	static final IconData nf_custom_fennel = _icons['nf-custom-fennel']!;
+ 	static final IconData nf_custom_firebase = _icons['nf-custom-firebase']!;
  	static final IconData nf_custom_folder = _icons['nf-custom-folder']!;
  	static final IconData nf_custom_folder_config = _icons['nf-custom-folder_config']!;
  	static final IconData nf_custom_folder_git = _icons['nf-custom-folder_git']!;
@@ -10902,202 +11257,533 @@ class TDTxNFIcons {
  	static final IconData nf_custom_prettier = _icons['nf-custom-prettier']!;
  	static final IconData nf_custom_puppet = _icons['nf-custom-puppet']!;
  	static final IconData nf_custom_purescript = _icons['nf-custom-purescript']!;
+ 	static final IconData nf_custom_ruby = _icons['nf-custom-ruby']!;
  	static final IconData nf_custom_scheme = _icons['nf-custom-scheme']!;
  	static final IconData nf_custom_toml = _icons['nf-custom-toml']!;
  	static final IconData nf_custom_v_lang = _icons['nf-custom-v_lang']!;
  	static final IconData nf_custom_vim = _icons['nf-custom-vim']!;
+ 	static final IconData nf_custom_vitruvian = _icons['nf-custom-vitruvian']!;
  	static final IconData nf_custom_windows = _icons['nf-custom-windows']!;
+ 	static final IconData nf_dev_aarch64 = _icons['nf-dev-aarch64']!;
+ 	static final IconData nf_dev_adonisjs = _icons['nf-dev-adonisjs']!;
+ 	static final IconData nf_dev_aftereffects = _icons['nf-dev-aftereffects']!;
+ 	static final IconData nf_dev_akka = _icons['nf-dev-akka']!;
+ 	static final IconData nf_dev_algolia = _icons['nf-dev-algolia']!;
+ 	static final IconData nf_dev_alpinejs = _icons['nf-dev-alpinejs']!;
+ 	static final IconData nf_dev_amazonwebservices = _icons['nf-dev-amazonwebservices']!;
+ 	static final IconData nf_dev_anaconda = _icons['nf-dev-anaconda']!;
  	static final IconData nf_dev_android = _icons['nf-dev-android']!;
+ 	static final IconData nf_dev_androidstudio = _icons['nf-dev-androidstudio']!;
  	static final IconData nf_dev_angular = _icons['nf-dev-angular']!;
+ 	static final IconData nf_dev_angularjs = _icons['nf-dev-angularjs']!;
+ 	static final IconData nf_dev_angularmaterial = _icons['nf-dev-angularmaterial']!;
+ 	static final IconData nf_dev_ansible = _icons['nf-dev-ansible']!;
+ 	static final IconData nf_dev_antdesign = _icons['nf-dev-antdesign']!;
+ 	static final IconData nf_dev_apache = _icons['nf-dev-apache']!;
+ 	static final IconData nf_dev_apacheairflow = _icons['nf-dev-apacheairflow']!;
+ 	static final IconData nf_dev_apachekafka = _icons['nf-dev-apachekafka']!;
+ 	static final IconData nf_dev_apachespark = _icons['nf-dev-apachespark']!;
+ 	static final IconData nf_dev_apl = _icons['nf-dev-apl']!;
  	static final IconData nf_dev_appcelerator = _icons['nf-dev-appcelerator']!;
  	static final IconData nf_dev_apple = _icons['nf-dev-apple']!;
- 	static final IconData nf_dev_appstore = _icons['nf-dev-appstore']!;
- 	static final IconData nf_dev_aptana = _icons['nf-dev-aptana']!;
- 	static final IconData nf_dev_asterisk = _icons['nf-dev-asterisk']!;
- 	static final IconData nf_dev_atlassian = _icons['nf-dev-atlassian']!;
+ 	static final IconData nf_dev_appwrite = _icons['nf-dev-appwrite']!;
+ 	static final IconData nf_dev_archlinux = _icons['nf-dev-archlinux']!;
+ 	static final IconData nf_dev_arduino = _icons['nf-dev-arduino']!;
+ 	static final IconData nf_dev_argocd = _icons['nf-dev-argocd']!;
+ 	static final IconData nf_dev_astro = _icons['nf-dev-astro']!;
  	static final IconData nf_dev_atom = _icons['nf-dev-atom']!;
+ 	static final IconData nf_dev_awk = _icons['nf-dev-awk']!;
  	static final IconData nf_dev_aws = _icons['nf-dev-aws']!;
+ 	static final IconData nf_dev_axios = _icons['nf-dev-axios']!;
+ 	static final IconData nf_dev_azure = _icons['nf-dev-azure']!;
+ 	static final IconData nf_dev_azuredevops = _icons['nf-dev-azuredevops']!;
+ 	static final IconData nf_dev_azuresqldatabase = _icons['nf-dev-azuresqldatabase']!;
+ 	static final IconData nf_dev_babel = _icons['nf-dev-babel']!;
  	static final IconData nf_dev_backbone = _icons['nf-dev-backbone']!;
- 	static final IconData nf_dev_bing_small = _icons['nf-dev-bing_small']!;
- 	static final IconData nf_dev_bintray = _icons['nf-dev-bintray']!;
+ 	static final IconData nf_dev_backbonejs = _icons['nf-dev-backbonejs']!;
+ 	static final IconData nf_dev_ballerina = _icons['nf-dev-ballerina']!;
+ 	static final IconData nf_dev_bamboo = _icons['nf-dev-bamboo']!;
+ 	static final IconData nf_dev_bash = _icons['nf-dev-bash']!;
+ 	static final IconData nf_dev_beats = _icons['nf-dev-beats']!;
+ 	static final IconData nf_dev_behance = _icons['nf-dev-behance']!;
  	static final IconData nf_dev_bitbucket = _icons['nf-dev-bitbucket']!;
- 	static final IconData nf_dev_blackberry = _icons['nf-dev-blackberry']!;
+ 	static final IconData nf_dev_blazor = _icons['nf-dev-blazor']!;
+ 	static final IconData nf_dev_blender = _icons['nf-dev-blender']!;
  	static final IconData nf_dev_bootstrap = _icons['nf-dev-bootstrap']!;
  	static final IconData nf_dev_bower = _icons['nf-dev-bower']!;
- 	static final IconData nf_dev_brackets = _icons['nf-dev-brackets']!;
- 	static final IconData nf_dev_bugsense = _icons['nf-dev-bugsense']!;
- 	static final IconData nf_dev_celluloid = _icons['nf-dev-celluloid']!;
- 	static final IconData nf_dev_chart = _icons['nf-dev-chart']!;
+ 	static final IconData nf_dev_browserstack = _icons['nf-dev-browserstack']!;
+ 	static final IconData nf_dev_bulma = _icons['nf-dev-bulma']!;
+ 	static final IconData nf_dev_bun = _icons['nf-dev-bun']!;
+ 	static final IconData nf_dev_c = _icons['nf-dev-c']!;
+ 	static final IconData nf_dev_c_lang = _icons['nf-dev-c_lang']!;
+ 	static final IconData nf_dev_cairo = _icons['nf-dev-cairo']!;
+ 	static final IconData nf_dev_cakephp = _icons['nf-dev-cakephp']!;
+ 	static final IconData nf_dev_canva = _icons['nf-dev-canva']!;
+ 	static final IconData nf_dev_capacitor = _icons['nf-dev-capacitor']!;
+ 	static final IconData nf_dev_carbon = _icons['nf-dev-carbon']!;
+ 	static final IconData nf_dev_cassandra = _icons['nf-dev-cassandra']!;
+ 	static final IconData nf_dev_centos = _icons['nf-dev-centos']!;
+ 	static final IconData nf_dev_ceylon = _icons['nf-dev-ceylon']!;
  	static final IconData nf_dev_chrome = _icons['nf-dev-chrome']!;
- 	static final IconData nf_dev_cisco = _icons['nf-dev-cisco']!;
+ 	static final IconData nf_dev_circleci = _icons['nf-dev-circleci']!;
+ 	static final IconData nf_dev_clarity = _icons['nf-dev-clarity']!;
+ 	static final IconData nf_dev_clion = _icons['nf-dev-clion']!;
  	static final IconData nf_dev_clojure = _icons['nf-dev-clojure']!;
  	static final IconData nf_dev_clojure_alt = _icons['nf-dev-clojure_alt']!;
- 	static final IconData nf_dev_cloud9 = _icons['nf-dev-cloud9']!;
- 	static final IconData nf_dev_coda = _icons['nf-dev-coda']!;
- 	static final IconData nf_dev_code = _icons['nf-dev-code']!;
- 	static final IconData nf_dev_code_badge = _icons['nf-dev-code_badge']!;
+ 	static final IconData nf_dev_clojurescript = _icons['nf-dev-clojurescript']!;
+ 	static final IconData nf_dev_cloudflare = _icons['nf-dev-cloudflare']!;
+ 	static final IconData nf_dev_cloudflareworkers = _icons['nf-dev-cloudflareworkers']!;
+ 	static final IconData nf_dev_cmake = _icons['nf-dev-cmake']!;
+ 	static final IconData nf_dev_codeac = _icons['nf-dev-codeac']!;
+ 	static final IconData nf_dev_codecov = _icons['nf-dev-codecov']!;
  	static final IconData nf_dev_codeigniter = _icons['nf-dev-codeigniter']!;
  	static final IconData nf_dev_codepen = _icons['nf-dev-codepen']!;
- 	static final IconData nf_dev_codrops = _icons['nf-dev-codrops']!;
  	static final IconData nf_dev_coffeescript = _icons['nf-dev-coffeescript']!;
- 	static final IconData nf_dev_compass = _icons['nf-dev-compass']!;
  	static final IconData nf_dev_composer = _icons['nf-dev-composer']!;
- 	static final IconData nf_dev_creativecommons = _icons['nf-dev-creativecommons']!;
- 	static final IconData nf_dev_creativecommons_badge = _icons['nf-dev-creativecommons_badge']!;
+ 	static final IconData nf_dev_confluence = _icons['nf-dev-confluence']!;
+ 	static final IconData nf_dev_consul = _icons['nf-dev-consul']!;
+ 	static final IconData nf_dev_contao = _icons['nf-dev-contao']!;
+ 	static final IconData nf_dev_corejs = _icons['nf-dev-corejs']!;
+ 	static final IconData nf_dev_cosmosdb = _icons['nf-dev-cosmosdb']!;
+ 	static final IconData nf_dev_couchbase = _icons['nf-dev-couchbase']!;
+ 	static final IconData nf_dev_couchdb = _icons['nf-dev-couchdb']!;
+ 	static final IconData nf_dev_cplusplus = _icons['nf-dev-cplusplus']!;
+ 	static final IconData nf_dev_crystal = _icons['nf-dev-crystal']!;
+ 	static final IconData nf_dev_csharp = _icons['nf-dev-csharp']!;
  	static final IconData nf_dev_css3 = _icons['nf-dev-css3']!;
  	static final IconData nf_dev_css3_full = _icons['nf-dev-css3_full']!;
- 	static final IconData nf_dev_css_tricks = _icons['nf-dev-css_tricks']!;
- 	static final IconData nf_dev_cssdeck = _icons['nf-dev-cssdeck']!;
+ 	static final IconData nf_dev_cucumber = _icons['nf-dev-cucumber']!;
+ 	static final IconData nf_dev_cypressio = _icons['nf-dev-cypressio']!;
+ 	static final IconData nf_dev_d3js = _icons['nf-dev-d3js']!;
  	static final IconData nf_dev_dart = _icons['nf-dev-dart']!;
  	static final IconData nf_dev_database = _icons['nf-dev-database']!;
+ 	static final IconData nf_dev_datagrip = _icons['nf-dev-datagrip']!;
+ 	static final IconData nf_dev_dataspell = _icons['nf-dev-dataspell']!;
+ 	static final IconData nf_dev_dbeaver = _icons['nf-dev-dbeaver']!;
  	static final IconData nf_dev_debian = _icons['nf-dev-debian']!;
+ 	static final IconData nf_dev_denojs = _icons['nf-dev-denojs']!;
+ 	static final IconData nf_dev_devicon = _icons['nf-dev-devicon']!;
  	static final IconData nf_dev_digital_ocean = _icons['nf-dev-digital_ocean']!;
+ 	static final IconData nf_dev_digitalocean = _icons['nf-dev-digitalocean']!;
+ 	static final IconData nf_dev_discordjs = _icons['nf-dev-discordjs']!;
  	static final IconData nf_dev_django = _icons['nf-dev-django']!;
+ 	static final IconData nf_dev_djangorest = _icons['nf-dev-djangorest']!;
  	static final IconData nf_dev_dlang = _icons['nf-dev-dlang']!;
  	static final IconData nf_dev_docker = _icons['nf-dev-docker']!;
  	static final IconData nf_dev_doctrine = _icons['nf-dev-doctrine']!;
- 	static final IconData nf_dev_dojo = _icons['nf-dev-dojo']!;
  	static final IconData nf_dev_dotnet = _icons['nf-dev-dotnet']!;
+ 	static final IconData nf_dev_dotnetcore = _icons['nf-dev-dotnetcore']!;
  	static final IconData nf_dev_dreamweaver = _icons['nf-dev-dreamweaver']!;
  	static final IconData nf_dev_dropbox = _icons['nf-dev-dropbox']!;
+ 	static final IconData nf_dev_dropwizard = _icons['nf-dev-dropwizard']!;
  	static final IconData nf_dev_drupal = _icons['nf-dev-drupal']!;
+ 	static final IconData nf_dev_dynamodb = _icons['nf-dev-dynamodb']!;
  	static final IconData nf_dev_eclipse = _icons['nf-dev-eclipse']!;
+ 	static final IconData nf_dev_ecto = _icons['nf-dev-ecto']!;
+ 	static final IconData nf_dev_elasticsearch = _icons['nf-dev-elasticsearch']!;
+ 	static final IconData nf_dev_electron = _icons['nf-dev-electron']!;
+ 	static final IconData nf_dev_eleventy = _icons['nf-dev-eleventy']!;
+ 	static final IconData nf_dev_elixir = _icons['nf-dev-elixir']!;
+ 	static final IconData nf_dev_elm = _icons['nf-dev-elm']!;
+ 	static final IconData nf_dev_emacs = _icons['nf-dev-emacs']!;
+ 	static final IconData nf_dev_embeddedc = _icons['nf-dev-embeddedc']!;
  	static final IconData nf_dev_ember = _icons['nf-dev-ember']!;
- 	static final IconData nf_dev_envato = _icons['nf-dev-envato']!;
+ 	static final IconData nf_dev_envoy = _icons['nf-dev-envoy']!;
  	static final IconData nf_dev_erlang = _icons['nf-dev-erlang']!;
- 	static final IconData nf_dev_extjs = _icons['nf-dev-extjs']!;
+ 	static final IconData nf_dev_eslint = _icons['nf-dev-eslint']!;
+ 	static final IconData nf_dev_express = _icons['nf-dev-express']!;
+ 	static final IconData nf_dev_facebook = _icons['nf-dev-facebook']!;
+ 	static final IconData nf_dev_fastapi = _icons['nf-dev-fastapi']!;
+ 	static final IconData nf_dev_fastify = _icons['nf-dev-fastify']!;
+ 	static final IconData nf_dev_faunadb = _icons['nf-dev-faunadb']!;
+ 	static final IconData nf_dev_feathersjs = _icons['nf-dev-feathersjs']!;
+ 	static final IconData nf_dev_fedora = _icons['nf-dev-fedora']!;
+ 	static final IconData nf_dev_figma = _icons['nf-dev-figma']!;
+ 	static final IconData nf_dev_filezilla = _icons['nf-dev-filezilla']!;
  	static final IconData nf_dev_firebase = _icons['nf-dev-firebase']!;
  	static final IconData nf_dev_firefox = _icons['nf-dev-firefox']!;
+ 	static final IconData nf_dev_flask = _icons['nf-dev-flask']!;
+ 	static final IconData nf_dev_flutter = _icons['nf-dev-flutter']!;
+ 	static final IconData nf_dev_fortran = _icons['nf-dev-fortran']!;
+ 	static final IconData nf_dev_foundation = _icons['nf-dev-foundation']!;
+ 	static final IconData nf_dev_framermotion = _icons['nf-dev-framermotion']!;
+ 	static final IconData nf_dev_framework7 = _icons['nf-dev-framework7']!;
  	static final IconData nf_dev_fsharp = _icons['nf-dev-fsharp']!;
+ 	static final IconData nf_dev_gatling = _icons['nf-dev-gatling']!;
+ 	static final IconData nf_dev_gatsby = _icons['nf-dev-gatsby']!;
+ 	static final IconData nf_dev_gazebo = _icons['nf-dev-gazebo']!;
+ 	static final IconData nf_dev_gcc = _icons['nf-dev-gcc']!;
+ 	static final IconData nf_dev_gentoo = _icons['nf-dev-gentoo']!;
  	static final IconData nf_dev_ghost = _icons['nf-dev-ghost']!;
  	static final IconData nf_dev_ghost_small = _icons['nf-dev-ghost_small']!;
+ 	static final IconData nf_dev_gimp = _icons['nf-dev-gimp']!;
  	static final IconData nf_dev_git = _icons['nf-dev-git']!;
  	static final IconData nf_dev_git_branch = _icons['nf-dev-git_branch']!;
  	static final IconData nf_dev_git_commit = _icons['nf-dev-git_commit']!;
  	static final IconData nf_dev_git_compare = _icons['nf-dev-git_compare']!;
  	static final IconData nf_dev_git_merge = _icons['nf-dev-git_merge']!;
  	static final IconData nf_dev_git_pull_request = _icons['nf-dev-git_pull_request']!;
+ 	static final IconData nf_dev_gitbook = _icons['nf-dev-gitbook']!;
  	static final IconData nf_dev_github = _icons['nf-dev-github']!;
- 	static final IconData nf_dev_github_alt = _icons['nf-dev-github_alt']!;
  	static final IconData nf_dev_github_badge = _icons['nf-dev-github_badge']!;
  	static final IconData nf_dev_github_full = _icons['nf-dev-github_full']!;
+ 	static final IconData nf_dev_githubactions = _icons['nf-dev-githubactions']!;
+ 	static final IconData nf_dev_githubcodespaces = _icons['nf-dev-githubcodespaces']!;
+ 	static final IconData nf_dev_gitlab = _icons['nf-dev-gitlab']!;
+ 	static final IconData nf_dev_gitpod = _icons['nf-dev-gitpod']!;
+ 	static final IconData nf_dev_gitter = _icons['nf-dev-gitter']!;
  	static final IconData nf_dev_gnu = _icons['nf-dev-gnu']!;
  	static final IconData nf_dev_go = _icons['nf-dev-go']!;
- 	static final IconData nf_dev_google_cloud_platform = _icons['nf-dev-google_cloud_platform']!;
- 	static final IconData nf_dev_google_drive = _icons['nf-dev-google_drive']!;
+ 	static final IconData nf_dev_godot = _icons['nf-dev-godot']!;
+ 	static final IconData nf_dev_goland = _icons['nf-dev-goland']!;
+ 	static final IconData nf_dev_google = _icons['nf-dev-google']!;
+ 	static final IconData nf_dev_googlecloud = _icons['nf-dev-googlecloud']!;
+ 	static final IconData nf_dev_gradle = _icons['nf-dev-gradle']!;
+ 	static final IconData nf_dev_grafana = _icons['nf-dev-grafana']!;
  	static final IconData nf_dev_grails = _icons['nf-dev-grails']!;
+ 	static final IconData nf_dev_graphql = _icons['nf-dev-graphql']!;
  	static final IconData nf_dev_groovy = _icons['nf-dev-groovy']!;
+ 	static final IconData nf_dev_grpc = _icons['nf-dev-grpc']!;
  	static final IconData nf_dev_grunt = _icons['nf-dev-grunt']!;
  	static final IconData nf_dev_gulp = _icons['nf-dev-gulp']!;
- 	static final IconData nf_dev_hackernews = _icons['nf-dev-hackernews']!;
+ 	static final IconData nf_dev_hadoop = _icons['nf-dev-hadoop']!;
+ 	static final IconData nf_dev_handlebars = _icons['nf-dev-handlebars']!;
+ 	static final IconData nf_dev_hardhat = _icons['nf-dev-hardhat']!;
+ 	static final IconData nf_dev_harvester = _icons['nf-dev-harvester']!;
  	static final IconData nf_dev_haskell = _icons['nf-dev-haskell']!;
+ 	static final IconData nf_dev_haxe = _icons['nf-dev-haxe']!;
+ 	static final IconData nf_dev_helm = _icons['nf-dev-helm']!;
  	static final IconData nf_dev_heroku = _icons['nf-dev-heroku']!;
+ 	static final IconData nf_dev_hibernate = _icons['nf-dev-hibernate']!;
+ 	static final IconData nf_dev_homebrew = _icons['nf-dev-homebrew']!;
  	static final IconData nf_dev_html5 = _icons['nf-dev-html5']!;
- 	static final IconData nf_dev_html5_3d_effects = _icons['nf-dev-html5_3d_effects']!;
- 	static final IconData nf_dev_html5_connectivity = _icons['nf-dev-html5_connectivity']!;
- 	static final IconData nf_dev_html5_device_access = _icons['nf-dev-html5_device_access']!;
- 	static final IconData nf_dev_html5_multimedia = _icons['nf-dev-html5_multimedia']!;
+ 	static final IconData nf_dev_hugo = _icons['nf-dev-hugo']!;
  	static final IconData nf_dev_ie = _icons['nf-dev-ie']!;
+ 	static final IconData nf_dev_ifttt = _icons['nf-dev-ifttt']!;
  	static final IconData nf_dev_illustrator = _icons['nf-dev-illustrator']!;
+ 	static final IconData nf_dev_influxdb = _icons['nf-dev-influxdb']!;
+ 	static final IconData nf_dev_inkscape = _icons['nf-dev-inkscape']!;
+ 	static final IconData nf_dev_insomnia = _icons['nf-dev-insomnia']!;
  	static final IconData nf_dev_intellij = _icons['nf-dev-intellij']!;
  	static final IconData nf_dev_ionic = _icons['nf-dev-ionic']!;
+ 	static final IconData nf_dev_jaegertracing = _icons['nf-dev-jaegertracing']!;
+ 	static final IconData nf_dev_jamstack = _icons['nf-dev-jamstack']!;
+ 	static final IconData nf_dev_jasmine = _icons['nf-dev-jasmine']!;
  	static final IconData nf_dev_java = _icons['nf-dev-java']!;
  	static final IconData nf_dev_javascript = _icons['nf-dev-javascript']!;
+ 	static final IconData nf_dev_javascript_alt = _icons['nf-dev-javascript_alt']!;
  	static final IconData nf_dev_javascript_badge = _icons['nf-dev-javascript_badge']!;
- 	static final IconData nf_dev_javascript_shield = _icons['nf-dev-javascript_shield']!;
+ 	static final IconData nf_dev_jeet = _icons['nf-dev-jeet']!;
+ 	static final IconData nf_dev_jekyll = _icons['nf-dev-jekyll']!;
  	static final IconData nf_dev_jekyll_small = _icons['nf-dev-jekyll_small']!;
  	static final IconData nf_dev_jenkins = _icons['nf-dev-jenkins']!;
+ 	static final IconData nf_dev_jest = _icons['nf-dev-jest']!;
+ 	static final IconData nf_dev_jetbrains = _icons['nf-dev-jetbrains']!;
+ 	static final IconData nf_dev_jetpackcompose = _icons['nf-dev-jetpackcompose']!;
  	static final IconData nf_dev_jira = _icons['nf-dev-jira']!;
- 	static final IconData nf_dev_joomla = _icons['nf-dev-joomla']!;
+ 	static final IconData nf_dev_jiraalign = _icons['nf-dev-jiraalign']!;
  	static final IconData nf_dev_jquery = _icons['nf-dev-jquery']!;
- 	static final IconData nf_dev_jquery_ui = _icons['nf-dev-jquery_ui']!;
- 	static final IconData nf_dev_komodo = _icons['nf-dev-komodo']!;
+ 	static final IconData nf_dev_json = _icons['nf-dev-json']!;
+ 	static final IconData nf_dev_jule = _icons['nf-dev-jule']!;
+ 	static final IconData nf_dev_julia = _icons['nf-dev-julia']!;
+ 	static final IconData nf_dev_junit = _icons['nf-dev-junit']!;
+ 	static final IconData nf_dev_jupyter = _icons['nf-dev-jupyter']!;
+ 	static final IconData nf_dev_k3os = _icons['nf-dev-k3os']!;
+ 	static final IconData nf_dev_k3s = _icons['nf-dev-k3s']!;
+ 	static final IconData nf_dev_k6 = _icons['nf-dev-k6']!;
+ 	static final IconData nf_dev_kaggle = _icons['nf-dev-kaggle']!;
+ 	static final IconData nf_dev_karatelabs = _icons['nf-dev-karatelabs']!;
+ 	static final IconData nf_dev_karma = _icons['nf-dev-karma']!;
+ 	static final IconData nf_dev_kdeneon = _icons['nf-dev-kdeneon']!;
+ 	static final IconData nf_dev_keras = _icons['nf-dev-keras']!;
+ 	static final IconData nf_dev_kibana = _icons['nf-dev-kibana']!;
+ 	static final IconData nf_dev_knexjs = _icons['nf-dev-knexjs']!;
+ 	static final IconData nf_dev_knockout = _icons['nf-dev-knockout']!;
+ 	static final IconData nf_dev_kotlin = _icons['nf-dev-kotlin']!;
  	static final IconData nf_dev_krakenjs = _icons['nf-dev-krakenjs']!;
  	static final IconData nf_dev_krakenjs_badge = _icons['nf-dev-krakenjs_badge']!;
+ 	static final IconData nf_dev_ktor = _icons['nf-dev-ktor']!;
+ 	static final IconData nf_dev_kubernetes = _icons['nf-dev-kubernetes']!;
+ 	static final IconData nf_dev_labview = _icons['nf-dev-labview']!;
  	static final IconData nf_dev_laravel = _icons['nf-dev-laravel']!;
+ 	static final IconData nf_dev_latex = _icons['nf-dev-latex']!;
  	static final IconData nf_dev_less = _icons['nf-dev-less']!;
+ 	static final IconData nf_dev_linkedin = _icons['nf-dev-linkedin']!;
  	static final IconData nf_dev_linux = _icons['nf-dev-linux']!;
+ 	static final IconData nf_dev_liquibase = _icons['nf-dev-liquibase']!;
+ 	static final IconData nf_dev_livewire = _icons['nf-dev-livewire']!;
+ 	static final IconData nf_dev_llvm = _icons['nf-dev-llvm']!;
+ 	static final IconData nf_dev_lodash = _icons['nf-dev-lodash']!;
+ 	static final IconData nf_dev_logstash = _icons['nf-dev-logstash']!;
+ 	static final IconData nf_dev_lua = _icons['nf-dev-lua']!;
+ 	static final IconData nf_dev_lumen = _icons['nf-dev-lumen']!;
  	static final IconData nf_dev_magento = _icons['nf-dev-magento']!;
- 	static final IconData nf_dev_mailchimp = _icons['nf-dev-mailchimp']!;
+ 	static final IconData nf_dev_mariadb = _icons['nf-dev-mariadb']!;
  	static final IconData nf_dev_markdown = _icons['nf-dev-markdown']!;
  	static final IconData nf_dev_materializecss = _icons['nf-dev-materializecss']!;
+ 	static final IconData nf_dev_materialui = _icons['nf-dev-materialui']!;
+ 	static final IconData nf_dev_matlab = _icons['nf-dev-matlab']!;
+ 	static final IconData nf_dev_matplotlib = _icons['nf-dev-matplotlib']!;
+ 	static final IconData nf_dev_maven = _icons['nf-dev-maven']!;
+ 	static final IconData nf_dev_maya = _icons['nf-dev-maya']!;
  	static final IconData nf_dev_meteor = _icons['nf-dev-meteor']!;
  	static final IconData nf_dev_meteorfull = _icons['nf-dev-meteorfull']!;
- 	static final IconData nf_dev_mitlicence = _icons['nf-dev-mitlicence']!;
- 	static final IconData nf_dev_modernizr = _icons['nf-dev-modernizr']!;
+ 	static final IconData nf_dev_microsoftsqlserver = _icons['nf-dev-microsoftsqlserver']!;
+ 	static final IconData nf_dev_minitab = _icons['nf-dev-minitab']!;
+ 	static final IconData nf_dev_mithril = _icons['nf-dev-mithril']!;
+ 	static final IconData nf_dev_mobx = _icons['nf-dev-mobx']!;
+ 	static final IconData nf_dev_mocha = _icons['nf-dev-mocha']!;
+ 	static final IconData nf_dev_modx = _icons['nf-dev-modx']!;
+ 	static final IconData nf_dev_moleculer = _icons['nf-dev-moleculer']!;
  	static final IconData nf_dev_mongodb = _icons['nf-dev-mongodb']!;
- 	static final IconData nf_dev_mootools = _icons['nf-dev-mootools']!;
+ 	static final IconData nf_dev_mongoose = _icons['nf-dev-mongoose']!;
+ 	static final IconData nf_dev_moodle = _icons['nf-dev-moodle']!;
  	static final IconData nf_dev_mootools_badge = _icons['nf-dev-mootools_badge']!;
  	static final IconData nf_dev_mozilla = _icons['nf-dev-mozilla']!;
- 	static final IconData nf_dev_msql_server = _icons['nf-dev-msql_server']!;
+ 	static final IconData nf_dev_msdos = _icons['nf-dev-msdos']!;
  	static final IconData nf_dev_mysql = _icons['nf-dev-mysql']!;
- 	static final IconData nf_dev_nancy = _icons['nf-dev-nancy']!;
- 	static final IconData nf_dev_netbeans = _icons['nf-dev-netbeans']!;
- 	static final IconData nf_dev_netmagazine = _icons['nf-dev-netmagazine']!;
+ 	static final IconData nf_dev_nano = _icons['nf-dev-nano']!;
+ 	static final IconData nf_dev_neo4j = _icons['nf-dev-neo4j']!;
+ 	static final IconData nf_dev_neovim = _icons['nf-dev-neovim']!;
+ 	static final IconData nf_dev_nestjs = _icons['nf-dev-nestjs']!;
+ 	static final IconData nf_dev_netlify = _icons['nf-dev-netlify']!;
+ 	static final IconData nf_dev_networkx = _icons['nf-dev-networkx']!;
+ 	static final IconData nf_dev_nextjs = _icons['nf-dev-nextjs']!;
  	static final IconData nf_dev_nginx = _icons['nf-dev-nginx']!;
+ 	static final IconData nf_dev_ngrx = _icons['nf-dev-ngrx']!;
+ 	static final IconData nf_dev_nhibernate = _icons['nf-dev-nhibernate']!;
+ 	static final IconData nf_dev_nim = _icons['nf-dev-nim']!;
+ 	static final IconData nf_dev_nimble = _icons['nf-dev-nimble']!;
+ 	static final IconData nf_dev_nixos = _icons['nf-dev-nixos']!;
  	static final IconData nf_dev_nodejs = _icons['nf-dev-nodejs']!;
  	static final IconData nf_dev_nodejs_small = _icons['nf-dev-nodejs_small']!;
+ 	static final IconData nf_dev_nodemon = _icons['nf-dev-nodemon']!;
+ 	static final IconData nf_dev_nodewebkit = _icons['nf-dev-nodewebkit']!;
+ 	static final IconData nf_dev_nomad = _icons['nf-dev-nomad']!;
+ 	static final IconData nf_dev_norg = _icons['nf-dev-norg']!;
+ 	static final IconData nf_dev_notion = _icons['nf-dev-notion']!;
  	static final IconData nf_dev_npm = _icons['nf-dev-npm']!;
- 	static final IconData nf_dev_onedrive = _icons['nf-dev-onedrive']!;
- 	static final IconData nf_dev_openshift = _icons['nf-dev-openshift']!;
- 	static final IconData nf_dev_opensource = _icons['nf-dev-opensource']!;
+ 	static final IconData nf_dev_nuget = _icons['nf-dev-nuget']!;
+ 	static final IconData nf_dev_numpy = _icons['nf-dev-numpy']!;
+ 	static final IconData nf_dev_nuxtjs = _icons['nf-dev-nuxtjs']!;
+ 	static final IconData nf_dev_oauth = _icons['nf-dev-oauth']!;
+ 	static final IconData nf_dev_objectivec = _icons['nf-dev-objectivec']!;
+ 	static final IconData nf_dev_ocaml = _icons['nf-dev-ocaml']!;
+ 	static final IconData nf_dev_ohmyzsh = _icons['nf-dev-ohmyzsh']!;
+ 	static final IconData nf_dev_okta = _icons['nf-dev-okta']!;
+ 	static final IconData nf_dev_openal = _icons['nf-dev-openal']!;
+ 	static final IconData nf_dev_openapi = _icons['nf-dev-openapi']!;
+ 	static final IconData nf_dev_opencl = _icons['nf-dev-opencl']!;
+ 	static final IconData nf_dev_opencv = _icons['nf-dev-opencv']!;
+ 	static final IconData nf_dev_opengl = _icons['nf-dev-opengl']!;
+ 	static final IconData nf_dev_openstack = _icons['nf-dev-openstack']!;
+ 	static final IconData nf_dev_opensuse = _icons['nf-dev-opensuse']!;
+ 	static final IconData nf_dev_opentelemetry = _icons['nf-dev-opentelemetry']!;
  	static final IconData nf_dev_opera = _icons['nf-dev-opera']!;
+ 	static final IconData nf_dev_oracle = _icons['nf-dev-oracle']!;
+ 	static final IconData nf_dev_ory = _icons['nf-dev-ory']!;
+ 	static final IconData nf_dev_p5js = _icons['nf-dev-p5js']!;
+ 	static final IconData nf_dev_packer = _icons['nf-dev-packer']!;
+ 	static final IconData nf_dev_pandas = _icons['nf-dev-pandas']!;
  	static final IconData nf_dev_perl = _icons['nf-dev-perl']!;
- 	static final IconData nf_dev_phonegap = _icons['nf-dev-phonegap']!;
+ 	static final IconData nf_dev_pfsense = _icons['nf-dev-pfsense']!;
+ 	static final IconData nf_dev_phalcon = _icons['nf-dev-phalcon']!;
+ 	static final IconData nf_dev_phoenix = _icons['nf-dev-phoenix']!;
+ 	static final IconData nf_dev_photonengine = _icons['nf-dev-photonengine']!;
  	static final IconData nf_dev_photoshop = _icons['nf-dev-photoshop']!;
  	static final IconData nf_dev_php = _icons['nf-dev-php']!;
+ 	static final IconData nf_dev_phpstorm = _icons['nf-dev-phpstorm']!;
+ 	static final IconData nf_dev_playwright = _icons['nf-dev-playwright']!;
+ 	static final IconData nf_dev_plotly = _icons['nf-dev-plotly']!;
+ 	static final IconData nf_dev_pnpm = _icons['nf-dev-pnpm']!;
+ 	static final IconData nf_dev_podman = _icons['nf-dev-podman']!;
+ 	static final IconData nf_dev_poetry = _icons['nf-dev-poetry']!;
+ 	static final IconData nf_dev_polygon = _icons['nf-dev-polygon']!;
+ 	static final IconData nf_dev_portainer = _icons['nf-dev-portainer']!;
+ 	static final IconData nf_dev_postcss = _icons['nf-dev-postcss']!;
  	static final IconData nf_dev_postgresql = _icons['nf-dev-postgresql']!;
+ 	static final IconData nf_dev_postman = _icons['nf-dev-postman']!;
+ 	static final IconData nf_dev_powershell = _icons['nf-dev-powershell']!;
+ 	static final IconData nf_dev_premierepro = _icons['nf-dev-premierepro']!;
+ 	static final IconData nf_dev_prisma = _icons['nf-dev-prisma']!;
+ 	static final IconData nf_dev_processing = _icons['nf-dev-processing']!;
  	static final IconData nf_dev_prolog = _icons['nf-dev-prolog']!;
+ 	static final IconData nf_dev_prometheus = _icons['nf-dev-prometheus']!;
+ 	static final IconData nf_dev_protractor = _icons['nf-dev-protractor']!;
+ 	static final IconData nf_dev_pulsar = _icons['nf-dev-pulsar']!;
+ 	static final IconData nf_dev_pulumi = _icons['nf-dev-pulumi']!;
+ 	static final IconData nf_dev_puppeteer = _icons['nf-dev-puppeteer']!;
+ 	static final IconData nf_dev_purescript = _icons['nf-dev-purescript']!;
+ 	static final IconData nf_dev_putty = _icons['nf-dev-putty']!;
+ 	static final IconData nf_dev_pycharm = _icons['nf-dev-pycharm']!;
+ 	static final IconData nf_dev_pypi = _icons['nf-dev-pypi']!;
+ 	static final IconData nf_dev_pyscript = _icons['nf-dev-pyscript']!;
+ 	static final IconData nf_dev_pytest = _icons['nf-dev-pytest']!;
  	static final IconData nf_dev_python = _icons['nf-dev-python']!;
- 	static final IconData nf_dev_rackspace = _icons['nf-dev-rackspace']!;
- 	static final IconData nf_dev_raphael = _icons['nf-dev-raphael']!;
- 	static final IconData nf_dev_rasberry_pi = _icons['nf-dev-rasberry_pi']!;
+ 	static final IconData nf_dev_pytorch = _icons['nf-dev-pytorch']!;
+ 	static final IconData nf_dev_qodana = _icons['nf-dev-qodana']!;
+ 	static final IconData nf_dev_qt = _icons['nf-dev-qt']!;
+ 	static final IconData nf_dev_quarkus = _icons['nf-dev-quarkus']!;
+ 	static final IconData nf_dev_quasar = _icons['nf-dev-quasar']!;
+ 	static final IconData nf_dev_qwik = _icons['nf-dev-qwik']!;
+ 	static final IconData nf_dev_r = _icons['nf-dev-r']!;
+ 	static final IconData nf_dev_rabbitmq = _icons['nf-dev-rabbitmq']!;
+ 	static final IconData nf_dev_rails = _icons['nf-dev-rails']!;
+ 	static final IconData nf_dev_railway = _icons['nf-dev-railway']!;
+ 	static final IconData nf_dev_rancher = _icons['nf-dev-rancher']!;
+ 	static final IconData nf_dev_raspberry_pi = _icons['nf-dev-raspberry_pi']!;
+ 	static final IconData nf_dev_reach = _icons['nf-dev-reach']!;
  	static final IconData nf_dev_react = _icons['nf-dev-react']!;
+ 	static final IconData nf_dev_reactbootstrap = _icons['nf-dev-reactbootstrap']!;
+ 	static final IconData nf_dev_reactnavigation = _icons['nf-dev-reactnavigation']!;
+ 	static final IconData nf_dev_reactrouter = _icons['nf-dev-reactrouter']!;
+ 	static final IconData nf_dev_readthedocs = _icons['nf-dev-readthedocs']!;
+ 	static final IconData nf_dev_realm = _icons['nf-dev-realm']!;
+ 	static final IconData nf_dev_rect = _icons['nf-dev-rect']!;
  	static final IconData nf_dev_redhat = _icons['nf-dev-redhat']!;
  	static final IconData nf_dev_redis = _icons['nf-dev-redis']!;
+ 	static final IconData nf_dev_redux = _icons['nf-dev-redux']!;
+ 	static final IconData nf_dev_renpy = _icons['nf-dev-renpy']!;
+ 	static final IconData nf_dev_replit = _icons['nf-dev-replit']!;
  	static final IconData nf_dev_requirejs = _icons['nf-dev-requirejs']!;
- 	static final IconData nf_dev_responsive = _icons['nf-dev-responsive']!;
+ 	static final IconData nf_dev_rider = _icons['nf-dev-rider']!;
+ 	static final IconData nf_dev_rocksdb = _icons['nf-dev-rocksdb']!;
+ 	static final IconData nf_dev_rockylinux = _icons['nf-dev-rockylinux']!;
+ 	static final IconData nf_dev_rollup = _icons['nf-dev-rollup']!;
+ 	static final IconData nf_dev_ros = _icons['nf-dev-ros']!;
+ 	static final IconData nf_dev_rspec = _icons['nf-dev-rspec']!;
+ 	static final IconData nf_dev_rstudio = _icons['nf-dev-rstudio']!;
  	static final IconData nf_dev_ruby = _icons['nf-dev-ruby']!;
  	static final IconData nf_dev_ruby_on_rails = _icons['nf-dev-ruby_on_rails']!;
  	static final IconData nf_dev_ruby_rough = _icons['nf-dev-ruby_rough']!;
+ 	static final IconData nf_dev_rubymine = _icons['nf-dev-rubymine']!;
  	static final IconData nf_dev_rust = _icons['nf-dev-rust']!;
+ 	static final IconData nf_dev_rxjs = _icons['nf-dev-rxjs']!;
  	static final IconData nf_dev_safari = _icons['nf-dev-safari']!;
+ 	static final IconData nf_dev_salesforce = _icons['nf-dev-salesforce']!;
+ 	static final IconData nf_dev_sanity = _icons['nf-dev-sanity']!;
  	static final IconData nf_dev_sass = _icons['nf-dev-sass']!;
  	static final IconData nf_dev_scala = _icons['nf-dev-scala']!;
- 	static final IconData nf_dev_scriptcs = _icons['nf-dev-scriptcs']!;
- 	static final IconData nf_dev_scrum = _icons['nf-dev-scrum']!;
- 	static final IconData nf_dev_senchatouch = _icons['nf-dev-senchatouch']!;
- 	static final IconData nf_dev_sizzlejs = _icons['nf-dev-sizzlejs']!;
+ 	static final IconData nf_dev_scalingo = _icons['nf-dev-scalingo']!;
+ 	static final IconData nf_dev_scikitlearn = _icons['nf-dev-scikitlearn']!;
+ 	static final IconData nf_dev_sdl = _icons['nf-dev-sdl']!;
+ 	static final IconData nf_dev_selenium = _icons['nf-dev-selenium']!;
+ 	static final IconData nf_dev_sema = _icons['nf-dev-sema']!;
+ 	static final IconData nf_dev_sentry = _icons['nf-dev-sentry']!;
+ 	static final IconData nf_dev_sequelize = _icons['nf-dev-sequelize']!;
+ 	static final IconData nf_dev_shopware = _icons['nf-dev-shopware']!;
+ 	static final IconData nf_dev_shotgrid = _icons['nf-dev-shotgrid']!;
+ 	static final IconData nf_dev_sketch = _icons['nf-dev-sketch']!;
+ 	static final IconData nf_dev_slack = _icons['nf-dev-slack']!;
  	static final IconData nf_dev_smashing_magazine = _icons['nf-dev-smashing_magazine']!;
- 	static final IconData nf_dev_snap_svg = _icons['nf-dev-snap_svg']!;
- 	static final IconData nf_dev_sqllite = _icons['nf-dev-sqllite']!;
+ 	static final IconData nf_dev_socketio = _icons['nf-dev-socketio']!;
+ 	static final IconData nf_dev_solidity = _icons['nf-dev-solidity']!;
+ 	static final IconData nf_dev_solidjs = _icons['nf-dev-solidjs']!;
+ 	static final IconData nf_dev_sonarqube = _icons['nf-dev-sonarqube']!;
+ 	static final IconData nf_dev_sourcetree = _icons['nf-dev-sourcetree']!;
+ 	static final IconData nf_dev_spack = _icons['nf-dev-spack']!;
+ 	static final IconData nf_dev_splunk = _icons['nf-dev-splunk']!;
+ 	static final IconData nf_dev_spring = _icons['nf-dev-spring']!;
+ 	static final IconData nf_dev_spss = _icons['nf-dev-spss']!;
+ 	static final IconData nf_dev_spyder = _icons['nf-dev-spyder']!;
+ 	static final IconData nf_dev_sqlalchemy = _icons['nf-dev-sqlalchemy']!;
+ 	static final IconData nf_dev_sqldeveloper = _icons['nf-dev-sqldeveloper']!;
+ 	static final IconData nf_dev_sqlite = _icons['nf-dev-sqlite']!;
+ 	static final IconData nf_dev_ssh = _icons['nf-dev-ssh']!;
  	static final IconData nf_dev_stackoverflow = _icons['nf-dev-stackoverflow']!;
- 	static final IconData nf_dev_streamline = _icons['nf-dev-streamline']!;
+ 	static final IconData nf_dev_stata = _icons['nf-dev-stata']!;
+ 	static final IconData nf_dev_storybook = _icons['nf-dev-storybook']!;
+ 	static final IconData nf_dev_streamlit = _icons['nf-dev-streamlit']!;
  	static final IconData nf_dev_stylus = _icons['nf-dev-stylus']!;
  	static final IconData nf_dev_sublime = _icons['nf-dev-sublime']!;
+ 	static final IconData nf_dev_subversion = _icons['nf-dev-subversion']!;
+ 	static final IconData nf_dev_supabase = _icons['nf-dev-supabase']!;
+ 	static final IconData nf_dev_svelte = _icons['nf-dev-svelte']!;
+ 	static final IconData nf_dev_swagger = _icons['nf-dev-swagger']!;
  	static final IconData nf_dev_swift = _icons['nf-dev-swift']!;
+ 	static final IconData nf_dev_swiper = _icons['nf-dev-swiper']!;
  	static final IconData nf_dev_symfony = _icons['nf-dev-symfony']!;
  	static final IconData nf_dev_symfony_badge = _icons['nf-dev-symfony_badge']!;
- 	static final IconData nf_dev_techcrunch = _icons['nf-dev-techcrunch']!;
+ 	static final IconData nf_dev_tailwindcss = _icons['nf-dev-tailwindcss']!;
+ 	static final IconData nf_dev_tauri = _icons['nf-dev-tauri']!;
+ 	static final IconData nf_dev_tensorflow = _icons['nf-dev-tensorflow']!;
  	static final IconData nf_dev_terminal = _icons['nf-dev-terminal']!;
- 	static final IconData nf_dev_terminal_badge = _icons['nf-dev-terminal_badge']!;
+ 	static final IconData nf_dev_terraform = _icons['nf-dev-terraform']!;
+ 	static final IconData nf_dev_tex = _icons['nf-dev-tex']!;
+ 	static final IconData nf_dev_thealgorithms = _icons['nf-dev-thealgorithms']!;
+ 	static final IconData nf_dev_threedsmax = _icons['nf-dev-threedsmax']!;
+ 	static final IconData nf_dev_threejs = _icons['nf-dev-threejs']!;
+ 	static final IconData nf_dev_titaniumsdk = _icons['nf-dev-titaniumsdk']!;
+ 	static final IconData nf_dev_tomcat = _icons['nf-dev-tomcat']!;
+ 	static final IconData nf_dev_tortoisegit = _icons['nf-dev-tortoisegit']!;
+ 	static final IconData nf_dev_towergit = _icons['nf-dev-towergit']!;
+ 	static final IconData nf_dev_traefikmesh = _icons['nf-dev-traefikmesh']!;
+ 	static final IconData nf_dev_traefikproxy = _icons['nf-dev-traefikproxy']!;
  	static final IconData nf_dev_travis = _icons['nf-dev-travis']!;
  	static final IconData nf_dev_trello = _icons['nf-dev-trello']!;
+ 	static final IconData nf_dev_trpc = _icons['nf-dev-trpc']!;
+ 	static final IconData nf_dev_twitter = _icons['nf-dev-twitter']!;
+ 	static final IconData nf_dev_typescript = _icons['nf-dev-typescript']!;
  	static final IconData nf_dev_typo3 = _icons['nf-dev-typo3']!;
  	static final IconData nf_dev_ubuntu = _icons['nf-dev-ubuntu']!;
- 	static final IconData nf_dev_uikit = _icons['nf-dev-uikit']!;
+ 	static final IconData nf_dev_uml = _icons['nf-dev-uml']!;
+ 	static final IconData nf_dev_unifiedmodelinglanguage = _icons['nf-dev-unifiedmodelinglanguage']!;
+ 	static final IconData nf_dev_unity = _icons['nf-dev-unity']!;
  	static final IconData nf_dev_unity_small = _icons['nf-dev-unity_small']!;
+ 	static final IconData nf_dev_unix = _icons['nf-dev-unix']!;
+ 	static final IconData nf_dev_unrealengine = _icons['nf-dev-unrealengine']!;
+ 	static final IconData nf_dev_uwsgi = _icons['nf-dev-uwsgi']!;
+ 	static final IconData nf_dev_v8 = _icons['nf-dev-v8']!;
+ 	static final IconData nf_dev_vagrant = _icons['nf-dev-vagrant']!;
+ 	static final IconData nf_dev_vala = _icons['nf-dev-vala']!;
+ 	static final IconData nf_dev_vault = _icons['nf-dev-vault']!;
+ 	static final IconData nf_dev_vercel = _icons['nf-dev-vercel']!;
+ 	static final IconData nf_dev_vertx = _icons['nf-dev-vertx']!;
  	static final IconData nf_dev_vim = _icons['nf-dev-vim']!;
+ 	static final IconData nf_dev_visualbasic = _icons['nf-dev-visualbasic']!;
  	static final IconData nf_dev_visualstudio = _icons['nf-dev-visualstudio']!;
- 	static final IconData nf_dev_w3c = _icons['nf-dev-w3c']!;
- 	static final IconData nf_dev_webplatform = _icons['nf-dev-webplatform']!;
+ 	static final IconData nf_dev_vite = _icons['nf-dev-vite']!;
+ 	static final IconData nf_dev_vitejs = _icons['nf-dev-vitejs']!;
+ 	static final IconData nf_dev_vitess = _icons['nf-dev-vitess']!;
+ 	static final IconData nf_dev_vitest = _icons['nf-dev-vitest']!;
+ 	static final IconData nf_dev_vscode = _icons['nf-dev-vscode']!;
+ 	static final IconData nf_dev_vsphere = _icons['nf-dev-vsphere']!;
+ 	static final IconData nf_dev_vuejs = _icons['nf-dev-vuejs']!;
+ 	static final IconData nf_dev_vuestorefront = _icons['nf-dev-vuestorefront']!;
+ 	static final IconData nf_dev_vuetify = _icons['nf-dev-vuetify']!;
+ 	static final IconData nf_dev_vyper = _icons['nf-dev-vyper']!;
+ 	static final IconData nf_dev_wasm = _icons['nf-dev-wasm']!;
+ 	static final IconData nf_dev_webflow = _icons['nf-dev-webflow']!;
+ 	static final IconData nf_dev_weblate = _icons['nf-dev-weblate']!;
+ 	static final IconData nf_dev_webpack = _icons['nf-dev-webpack']!;
+ 	static final IconData nf_dev_webstorm = _icons['nf-dev-webstorm']!;
  	static final IconData nf_dev_windows = _icons['nf-dev-windows']!;
+ 	static final IconData nf_dev_windows11 = _icons['nf-dev-windows11']!;
+ 	static final IconData nf_dev_woocommerce = _icons['nf-dev-woocommerce']!;
  	static final IconData nf_dev_wordpress = _icons['nf-dev-wordpress']!;
- 	static final IconData nf_dev_yahoo = _icons['nf-dev-yahoo']!;
- 	static final IconData nf_dev_yahoo_small = _icons['nf-dev-yahoo_small']!;
- 	static final IconData nf_dev_yeoman = _icons['nf-dev-yeoman']!;
+ 	static final IconData nf_dev_xamarin = _icons['nf-dev-xamarin']!;
+ 	static final IconData nf_dev_xcode = _icons['nf-dev-xcode']!;
+ 	static final IconData nf_dev_xd = _icons['nf-dev-xd']!;
+ 	static final IconData nf_dev_xml = _icons['nf-dev-xml']!;
+ 	static final IconData nf_dev_yaml = _icons['nf-dev-yaml']!;
+ 	static final IconData nf_dev_yarn = _icons['nf-dev-yarn']!;
  	static final IconData nf_dev_yii = _icons['nf-dev-yii']!;
+ 	static final IconData nf_dev_yugabytedb = _icons['nf-dev-yugabytedb']!;
+ 	static final IconData nf_dev_yunohost = _icons['nf-dev-yunohost']!;
  	static final IconData nf_dev_zend = _icons['nf-dev-zend']!;
+ 	static final IconData nf_dev_zig = _icons['nf-dev-zig']!;
+ 	static final IconData nf_extra_progress_empty_left = _icons['nf-extra-progress_empty_left']!;
+ 	static final IconData nf_extra_progress_empty_mid = _icons['nf-extra-progress_empty_mid']!;
+ 	static final IconData nf_extra_progress_empty_right = _icons['nf-extra-progress_empty_right']!;
+ 	static final IconData nf_extra_progress_full_left = _icons['nf-extra-progress_full_left']!;
+ 	static final IconData nf_extra_progress_full_mid = _icons['nf-extra-progress_full_mid']!;
+ 	static final IconData nf_extra_progress_full_right = _icons['nf-extra-progress_full_right']!;
+ 	static final IconData nf_extra_progress_spinner_1 = _icons['nf-extra-progress_spinner_1']!;
+ 	static final IconData nf_extra_progress_spinner_2 = _icons['nf-extra-progress_spinner_2']!;
+ 	static final IconData nf_extra_progress_spinner_3 = _icons['nf-extra-progress_spinner_3']!;
+ 	static final IconData nf_extra_progress_spinner_4 = _icons['nf-extra-progress_spinner_4']!;
+ 	static final IconData nf_extra_progress_spinner_5 = _icons['nf-extra-progress_spinner_5']!;
+ 	static final IconData nf_extra_progress_spinner_6 = _icons['nf-extra-progress_spinner_6']!;
  	static final IconData nf_fa_500px = _icons['nf-fa-500px']!;
  	static final IconData nf_fa_accessible_icon = _icons['nf-fa-accessible_icon']!;
  	static final IconData nf_fa_accusoft = _icons['nf-fa-accusoft']!;
@@ -13153,6 +13839,14 @@ class TDTxNFIcons {
  	static final IconData nf_linux_krita = _icons['nf-linux-krita']!;
  	static final IconData nf_linux_kubuntu = _icons['nf-linux-kubuntu']!;
  	static final IconData nf_linux_kubuntu_inverse = _icons['nf-linux-kubuntu_inverse']!;
+ 	static final IconData nf_linux_leap = _icons['nf-linux-leap']!;
+ 	static final IconData nf_linux_libreoffice = _icons['nf-linux-libreoffice']!;
+ 	static final IconData nf_linux_libreofficebase = _icons['nf-linux-libreofficebase']!;
+ 	static final IconData nf_linux_libreofficecalc = _icons['nf-linux-libreofficecalc']!;
+ 	static final IconData nf_linux_libreofficedraw = _icons['nf-linux-libreofficedraw']!;
+ 	static final IconData nf_linux_libreofficeimpress = _icons['nf-linux-libreofficeimpress']!;
+ 	static final IconData nf_linux_libreofficemath = _icons['nf-linux-libreofficemath']!;
+ 	static final IconData nf_linux_libreofficewriter = _icons['nf-linux-libreofficewriter']!;
  	static final IconData nf_linux_linuxmint = _icons['nf-linux-linuxmint']!;
  	static final IconData nf_linux_linuxmint_inverse = _icons['nf-linux-linuxmint_inverse']!;
  	static final IconData nf_linux_locos = _icons['nf-linux-locos']!;
@@ -13167,6 +13861,7 @@ class TDTxNFIcons {
  	static final IconData nf_linux_mxlinux = _icons['nf-linux-mxlinux']!;
  	static final IconData nf_linux_neovim = _icons['nf-linux-neovim']!;
  	static final IconData nf_linux_nixos = _icons['nf-linux-nixos']!;
+ 	static final IconData nf_linux_nobara = _icons['nf-linux-nobara']!;
  	static final IconData nf_linux_octoprint = _icons['nf-linux-octoprint']!;
  	static final IconData nf_linux_openbsd = _icons['nf-linux-openbsd']!;
  	static final IconData nf_linux_openscad = _icons['nf-linux-openscad']!;
@@ -13187,6 +13882,7 @@ class TDTxNFIcons {
  	static final IconData nf_linux_redhat = _icons['nf-linux-redhat']!;
  	static final IconData nf_linux_reprap = _icons['nf-linux-reprap']!;
  	static final IconData nf_linux_riscv = _icons['nf-linux-riscv']!;
+ 	static final IconData nf_linux_river = _icons['nf-linux-river']!;
  	static final IconData nf_linux_rocky_linux = _icons['nf-linux-rocky_linux']!;
  	static final IconData nf_linux_sabayon = _icons['nf-linux-sabayon']!;
  	static final IconData nf_linux_slackware = _icons['nf-linux-slackware']!;
@@ -13198,7 +13894,9 @@ class TDTxNFIcons {
  	static final IconData nf_linux_thunderbird = _icons['nf-linux-thunderbird']!;
  	static final IconData nf_linux_tor = _icons['nf-linux-tor']!;
  	static final IconData nf_linux_trisquel = _icons['nf-linux-trisquel']!;
+ 	static final IconData nf_linux_tumbleweed = _icons['nf-linux-tumbleweed']!;
  	static final IconData nf_linux_tux = _icons['nf-linux-tux']!;
+ 	static final IconData nf_linux_typst = _icons['nf-linux-typst']!;
  	static final IconData nf_linux_ubuntu = _icons['nf-linux-ubuntu']!;
  	static final IconData nf_linux_ubuntu_inverse = _icons['nf-linux-ubuntu_inverse']!;
  	static final IconData nf_linux_vanilla = _icons['nf-linux-vanilla']!;

@@ -1,4 +1,22 @@
+"""
+Ejecución:
+    python actualizarIcons.py
 
+
+1. Crear entorno virtual de Python
+    python -m venv venv
+
+2. Activarlo
+    WINDOWS: venv\Scripts\activate
+    MAC/LINUX: source venv/bin/activate
+
+3. Instalar dependencias
+    pip install -r requirements.txt
+
+4. Salir del entorno
+    deactivate
+
+"""
 
 import requests
 import re
@@ -85,7 +103,7 @@ def save_to_file(content, filename):
 if __name__ == "__main__":
     url = "https://www.nerdfonts.com/assets/css/webfont.css"  # URL del archivo a descargar
     css_filename = "nerdfond.css"  # Nombre de archivo en el que se guardará el archivo descargado
-    dart_filename = "lib/tdtx_nf_icons.dart"  # Nombre del archivo Dart generado
+    dart_filename = "../lib/tdtx_nf_icons.dart"  # Nombre del archivo Dart generado
 
     download_file(url, css_filename)
     modify_file(css_filename)
