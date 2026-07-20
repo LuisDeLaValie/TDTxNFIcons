@@ -1,0 +1,22 @@
+PODS:
+  - Flutter (1.0.0)
+  - tdtx_nf_icons (0.0.1):
+    - Flutter
+
+DEPENDENCIES:
+  - Flutter (from `Flutter`)
+  - tdtx_nf_icons (from `.symlinks/plugins/tdtx_nf_icons/ios`)
+
+EXTERNAL SOURCES:
+  Flutter:
+    :path: Flutter
+  tdtx_nf_icons:
+    :path: ".symlinks/plugins/tdtx_nf_icons/ios"
+
+SPEC CHECKSUMS:
+  Flutter: cabc95a1d2626b1b06e7179b784ebcf0c0cde467
+  tdtx_nf_icons: 4394f8ea7bbe28abeea4edc4925875846bdc93a9
+
+PODFILE CHECKSUM: 4f1c12611da7338d21589c0b2ecd6bd20b109694
+
+COCOAPODS: 1.16.2

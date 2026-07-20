@@ -17,8 +17,8 @@ import 'package:flutter/widgets.dart';
 IconData nfIcon(int codePoint) {
   return IconData(
     codePoint,
-    fontFamily: 'NFH Regular',
-    fontPackage: 'tdtx_nf_icons',
+    fontFamily: "NFH Symbols",
+    fontPackage: "tdtx_nf_icons",
   );
 }
 

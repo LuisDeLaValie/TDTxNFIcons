@@ -9,14 +9,14 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Material App',
+      title: 'Pruebas de Icons TDTxLE',
       home: Scaffold(
         appBar: AppBar(
-          title: const Text('Material App Bar'),
+          title: const Text("Pruebas de Icons TDTxLE"),
         ),
         body: Center(
           child: Icon(
-            TDTxNFIcons.nf_cod_account,
+            TDTxNFIcons.nf_fa_ambulance,
             // TDTxNeFIcons.nf_cod_account,
             size: 34,
           ),
