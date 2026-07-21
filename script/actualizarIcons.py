@@ -66,20 +66,12 @@ def generate_dart_code(classes_with_icons):
 
 import 'package:flutter/widgets.dart';
 
-// [IconData] for a font Nerd Font brand icon from a code point
-///
-/// Code points can be obtained from nerdfonts.com
-IconData nfIcon({int codePoint}) => IconData(
-  codePoint,
-  fontFamily: "NFH Symbols",
-  fontPackage: "tdtx_nf_icons",
-);
 
 """
 
     dart_code += '\tfinal Map<String, IconData> _icons = {\n'
     for class_name, icon_code in classes_with_icons.items():
-        dart_code += f'\t\t\'{class_name}\': nfIcon(codePoint: 0x{icon_code}),\n '
+        dart_code += f'\t\t\'{class_name}\': const IconData(0x{icon_code}, fontFamily: "NFH Regular", fontPackage: "tdtx_nf_icons",),\n '
     dart_code +='\n};\n\n'
 
 
