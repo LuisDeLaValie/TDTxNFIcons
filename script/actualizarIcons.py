@@ -71,7 +71,7 @@ import 'package:flutter/widgets.dart';
 
     dart_code += '\tfinal Map<String, IconData> _icons = {\n'
     for class_name, icon_code in classes_with_icons.items():
-        dart_code += f'\t\t\'{class_name}\': const IconData(0x{icon_code}, fontFamily: "NFH Regular", fontPackage: "tdtx_nf_icons",),\n '
+        dart_code += f'\t\t\'{class_name}\': const IconData(0x{icon_code}, fontFamily: "NFH Symbols", fontPackage: "tdtx_nf_icons",),\n '
     dart_code +='\n};\n\n'
 
 
