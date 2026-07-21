@@ -1,11 +1,11 @@
 name: tdtx_nf_icons
 description: This package includes Nerd Font icons, providing easy access to its diverse collection of symbols and special characters.
-version: 3.2.1+2
+version: 3.2.2
 homepage: https://github.com/LuisDeLaValie/TDTxNFIcons
 repository: https://github.com/LuisDeLaValie/TDTxNFIcons
 
 environment:
-  sdk: '>=3.1.0 <4.0.0'
+  sdk: ^3.12.2
   flutter: '>=3.3.0'
 
 dependencies:
@@ -14,11 +14,13 @@ dependencies:
   flutter_web_plugins:
     sdk: flutter
   plugin_platform_interface: ^2.0.2
+  web: ^1.1.1
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
-  flutter_lints: ^2.0.0
+  
+  flutter_lints: ^6.0.0
 
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec
@@ -51,16 +53,19 @@ flutter:
       web:
         pluginClass: TdtxNfIconsWeb
         fileName: tdtx_nf_icons_web.dart
+      ome_platform:
+        pluginClass: somePluginClass
 
   # To add assets to your plugin package, add an assets section, like this:
- 
-
-  
+  # assets:
+  #   - images/a_dot_burr.jpeg
+  #   - images/a_dot_ham.jpeg
+  #
   # For details regarding assets in packages, see
-  # https://flutter.dev/assets-and-images/#from-packages
+  # https://flutter.dev/to/asset-from-package
   #
   # An image asset can refer to one or more resolution-specific "variants", see
-  # https://flutter.dev/assets-and-images/#resolution-aware
+  # https://flutter.dev/to/resolution-aware-images
 
   # To add custom fonts to your plugin package, add a fonts section here,
   # in this "flutter" section. Each entry in this list should have a
@@ -85,4 +90,4 @@ flutter:
     
   #
   # For details regarding fonts in packages, see
-  # https://flutter.dev/custom-fonts/#from-packages
+  # https://flutter.dev/to/font-from-package

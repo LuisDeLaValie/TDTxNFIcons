@@ -1,3 +1,5 @@
-## 0.0.1
+## 3.2.2
 
-* TODO: Describe initial release.
+- Updated icon definitions.
+- Regenerated the icon list.
+- Updated the package to support the latest Flutter and Dart SDK versions.
